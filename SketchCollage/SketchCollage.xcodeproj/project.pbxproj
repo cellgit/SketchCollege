@@ -15,6 +15,15 @@
 		F22780042188AF510049CF62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22780022188AF510049CF62 /* LaunchScreen.storyboard */; };
 		F227800F2188AF510049CF62 /* SketchCollageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F227800E2188AF510049CF62 /* SketchCollageTests.swift */; };
 		F227801A2188AF510049CF62 /* SketchCollageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22780192188AF510049CF62 /* SketchCollageUITests.swift */; };
+		F22780282188B0E30049CF62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22780272188B0E30049CF62 /* HomeViewController.swift */; };
+		F227802B2188B1FF0049CF62 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F227802A2188B1FF0049CF62 /* Theme.swift */; };
+		F22780332188C2BC0049CF62 /* HotKeysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22780322188C2BC0049CF62 /* HotKeysViewController.swift */; };
+		F22780352188C2CD0049CF62 /* HotKeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22780342188C2CD0049CF62 /* HotKeysView.swift */; };
+		F22780372188C2DB0049CF62 /* HotKeysPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22780362188C2DB0049CF62 /* HotKeysPresenter.swift */; };
+		F22780392188C2E90049CF62 /* HotKeysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22780382188C2E90049CF62 /* HotKeysModel.swift */; };
+		F227803C2188CD8C0049CF62 /* HotKeysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F227803A2188CD8C0049CF62 /* HotKeysCell.swift */; };
+		F227803D2188CD8C0049CF62 /* HotKeysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F227803B2188CD8C0049CF62 /* HotKeysCell.xib */; };
+		F914EBAB7B60C43E081B37AC /* Pods_SketchCollage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DAC5FE58ED867272283FA5 /* Pods_SketchCollage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9EA9541381BAF0949CAA019A /* Pods-SketchCollage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SketchCollage.release.xcconfig"; path = "Pods/Target Support Files/Pods-SketchCollage/Pods-SketchCollage.release.xcconfig"; sourceTree = "<group>"; };
+		A0DAC5FE58ED867272283FA5 /* Pods_SketchCollage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SketchCollage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D263ECEB7CDCAA4BBFED4A62 /* Pods-SketchCollage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SketchCollage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SketchCollage/Pods-SketchCollage.debug.xcconfig"; sourceTree = "<group>"; };
 		F2277FF32188AF4E0049CF62 /* SketchCollage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchCollage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2277FF62188AF4E0049CF62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2277FF82188AF4E0049CF62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +61,15 @@
 		F22780152188AF510049CF62 /* SketchCollageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchCollageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22780192188AF510049CF62 /* SketchCollageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchCollageUITests.swift; sourceTree = "<group>"; };
 		F227801B2188AF510049CF62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22780272188B0E30049CF62 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F227802A2188B1FF0049CF62 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F227802C2188B7470049CF62 /* SketchCollage-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SketchCollage-Header.h"; sourceTree = "<group>"; };
+		F22780322188C2BC0049CF62 /* HotKeysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeysViewController.swift; sourceTree = "<group>"; };
+		F22780342188C2CD0049CF62 /* HotKeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeysView.swift; sourceTree = "<group>"; };
+		F22780362188C2DB0049CF62 /* HotKeysPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeysPresenter.swift; sourceTree = "<group>"; };
+		F22780382188C2E90049CF62 /* HotKeysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeysModel.swift; sourceTree = "<group>"; };
+		F227803A2188CD8C0049CF62 /* HotKeysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeysCell.swift; sourceTree = "<group>"; };
+		F227803B2188CD8C0049CF62 /* HotKeysCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotKeysCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F914EBAB7B60C43E081B37AC /* Pods_SketchCollage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0F6D2B8C1464A3650107EF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0DAC5FE58ED867272283FA5 /* Pods_SketchCollage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D696FD5324713A0F30F83B92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D263ECEB7CDCAA4BBFED4A62 /* Pods-SketchCollage.debug.xcconfig */,
+				9EA9541381BAF0949CAA019A /* Pods-SketchCollage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F2277FEA2188AF4D0049CF62 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				F227800D2188AF510049CF62 /* SketchCollageTests */,
 				F22780182188AF510049CF62 /* SketchCollageUITests */,
 				F2277FF42188AF4E0049CF62 /* Products */,
+				D696FD5324713A0F30F83B92 /* Pods */,
+				D0F6D2B8C1464A3650107EF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +142,9 @@
 			children = (
 				F2277FF62188AF4E0049CF62 /* AppDelegate.swift */,
 				F2277FF82188AF4E0049CF62 /* ViewController.swift */,
+				F22780272188B0E30049CF62 /* HomeViewController.swift */,
+				F227802D2188C2830049CF62 /* Home */,
+				F22780292188B1F10049CF62 /* Config */,
 				F2277FFA2188AF4E0049CF62 /* Main.storyboard */,
 				F22780002188AF510049CF62 /* Assets.xcassets */,
 				F22780022188AF510049CF62 /* LaunchScreen.storyboard */,
@@ -128,6 +172,60 @@
 			path = SketchCollageUITests;
 			sourceTree = "<group>";
 		};
+		F22780292188B1F10049CF62 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F227802A2188B1FF0049CF62 /* Theme.swift */,
+				F227802C2188B7470049CF62 /* SketchCollage-Header.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F227802D2188C2830049CF62 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F227802F2188C2830049CF62 /* vc */,
+				F22780312188C2830049CF62 /* view */,
+				F227802E2188C2830049CF62 /* presenter */,
+				F22780302188C2830049CF62 /* model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F227802E2188C2830049CF62 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F22780362188C2DB0049CF62 /* HotKeysPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		F227802F2188C2830049CF62 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				F22780322188C2BC0049CF62 /* HotKeysViewController.swift */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		F22780302188C2830049CF62 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F22780382188C2E90049CF62 /* HotKeysModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F22780312188C2830049CF62 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F22780342188C2CD0049CF62 /* HotKeysView.swift */,
+				F227803A2188CD8C0049CF62 /* HotKeysCell.swift */,
+				F227803B2188CD8C0049CF62 /* HotKeysCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F227801E2188AF510049CF62 /* Build configuration list for PBXNativeTarget "SketchCollage" */;
 			buildPhases = (
+				56FCF6A169A14DE6FACD035F /* [CP] Check Pods Manifest.lock */,
 				F2277FEF2188AF4E0049CF62 /* Sources */,
 				F2277FF02188AF4E0049CF62 /* Frameworks */,
 				F2277FF12188AF4E0049CF62 /* Resources */,
+				E686171A4AA88EE456E965E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +335,7 @@
 				F22780042188AF510049CF62 /* LaunchScreen.storyboard in Resources */,
 				F22780012188AF510049CF62 /* Assets.xcassets in Resources */,
 				F2277FFC2188AF4E0049CF62 /* Main.storyboard in Resources */,
+				F227803D2188CD8C0049CF62 /* HotKeysCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +355,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56FCF6A169A14DE6FACD035F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SketchCollage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E686171A4AA88EE456E965E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SketchCollage/Pods-SketchCollage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SketchCollage/Pods-SketchCollage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2277FEF2188AF4E0049CF62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F22780372188C2DB0049CF62 /* HotKeysPresenter.swift in Sources */,
 				F2277FF92188AF4E0049CF62 /* ViewController.swift in Sources */,
 				F2277FF72188AF4E0049CF62 /* AppDelegate.swift in Sources */,
+				F22780352188C2CD0049CF62 /* HotKeysView.swift in Sources */,
+				F227802B2188B1FF0049CF62 /* Theme.swift in Sources */,
+				F22780392188C2E90049CF62 /* HotKeysModel.swift in Sources */,
 				F2277FFF2188AF4E0049CF62 /* SketchCollage.xcdatamodeld in Sources */,
+				F22780332188C2BC0049CF62 /* HotKeysViewController.swift in Sources */,
+				F22780282188B0E30049CF62 /* HomeViewController.swift in Sources */,
+				F227803C2188CD8C0049CF62 /* HotKeysCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,17 +595,20 @@
 		};
 		F227801F2188AF510049CF62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D263ECEB7CDCAA4BBFED4A62 /* Pods-SketchCollage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
 				INFOPLIST_FILE = SketchCollage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lhl.SketchCollage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SketchCollage/Config/SketchCollage-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,17 +616,20 @@
 		};
 		F22780202188AF510049CF62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA9541381BAF0949CAA019A /* Pods-SketchCollage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
 				INFOPLIST_FILE = SketchCollage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lhl.SketchCollage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SketchCollage/Config/SketchCollage-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
