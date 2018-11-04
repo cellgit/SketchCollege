@@ -24,7 +24,6 @@ class HotKeysCell: UITableViewCell {
         didSet {
             self.titleLabel.text = model.hotkey
             self.contentLabel.text = model.function
-            self.descLabel.text = model.desc
         }
     }
     

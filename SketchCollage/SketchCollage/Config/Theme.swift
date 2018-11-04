@@ -97,8 +97,8 @@ struct Theme {
         let headers = ["Content-Type":"application/json"]
         Alamofire.request(pathStr, method: .post, parameters: parameters, encoding: JSONEncoding.default,headers : headers).responseJSON { (response) in
             guard response.result.isSuccess else {
-                sendError("网络错误:\(response.result)")
-                HUD.flash(.label("网络错误"), delay: 1.0)
+                sendError("网络错误:\(String(describing: response.error))")
+                HUD.flash(.label("\(String(describing: response.error))"), delay: 1.0)
                 return
             }
             if let results = response.result.value {
@@ -106,10 +106,6 @@ struct Theme {
                 let json = JSON(results)
                 
                 print("======== \(json)")
-                
-//                if json["code"].stringValue != "0" {
-//
-//                }
                 
                 success(results as AnyObject)
                 

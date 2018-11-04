@@ -23,6 +23,7 @@
 		F22780392188C2E90049CF62 /* HotKeysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22780382188C2E90049CF62 /* HotKeysModel.swift */; };
 		F227803C2188CD8C0049CF62 /* HotKeysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F227803A2188CD8C0049CF62 /* HotKeysCell.swift */; };
 		F227803D2188CD8C0049CF62 /* HotKeysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F227803B2188CD8C0049CF62 /* HotKeysCell.xib */; };
+		F2978B45218F28920052693F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B44218F28920052693F /* APIManager.swift */; };
 		F914EBAB7B60C43E081B37AC /* Pods_SketchCollage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DAC5FE58ED867272283FA5 /* Pods_SketchCollage.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		F22780382188C2E90049CF62 /* HotKeysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeysModel.swift; sourceTree = "<group>"; };
 		F227803A2188CD8C0049CF62 /* HotKeysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeysCell.swift; sourceTree = "<group>"; };
 		F227803B2188CD8C0049CF62 /* HotKeysCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotKeysCell.xib; sourceTree = "<group>"; };
+		F2978B44218F28920052693F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				F227802A2188B1FF0049CF62 /* Theme.swift */,
+				F2978B44218F28920052693F /* APIManager.swift */,
 				F227802C2188B7470049CF62 /* SketchCollage-Header.h */,
 			);
 			path = Config;
@@ -422,6 +425,7 @@
 				F2277FFF2188AF4E0049CF62 /* SketchCollage.xcdatamodeld in Sources */,
 				F22780332188C2BC0049CF62 /* HotKeysViewController.swift in Sources */,
 				F22780282188B0E30049CF62 /* HomeViewController.swift in Sources */,
+				F2978B45218F28920052693F /* APIManager.swift in Sources */,
 				F227803C2188CD8C0049CF62 /* HotKeysCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

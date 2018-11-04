@@ -29,19 +29,13 @@ class HotKeysView: UIView {
     
     func setTable() {
         tableView = UITableView.init(frame: self.frame, style: .grouped)
-        tableView.backgroundColor = UIColor.white
         self.addSubview(tableView)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
+        tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
         tableView.separatorInset = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: NavHeight + TabHeight, right: 0)
-        
-//        if #available(iOS 11.0, *) {
-//            tableView.contentInsetAdjustmentBehavior = .never
-//            
-//            
-//        } else {}
         
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
@@ -91,20 +85,16 @@ extension HotKeysView: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 8.0
     }
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        return nil
-//    }
-//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//        return nil
-//    }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView.init(frame: CGRect(x: 0, y: 0, width: AppWidth, height: 0))
-        return view
+//        let view = UIView.init(frame: CGRect(x: 0, y: 0, width: AppWidth, height: 0))
+//        return view
+        return nil
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let view = UIView.init(frame: CGRect(x: 0, y: 0, width: AppWidth, height: 0))
-        return view
+//        let view = UIView.init(frame: CGRect(x: 0, y: 0, width: AppWidth, height: 0))
+//        return view
+        return nil
     }
 }
 

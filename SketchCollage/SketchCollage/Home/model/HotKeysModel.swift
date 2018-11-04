@@ -45,7 +45,6 @@ class HotKeysModel: NSObject {
     var id: String = ""
     var hotkey: String = ""
     var function: String = ""
-    var desc: String = ""
 }
 
 
@@ -65,7 +64,6 @@ extension HotKeysModel : SWModelProtocal {
                 model.id = item["id"].stringValue
                 model.hotkey = item["hotkey"].stringValue
                 model.function = item["function"].stringValue
-                model.desc = item["description"].stringValue
                 
                 array.append(model)
             }
