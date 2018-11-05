@@ -17,7 +17,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window?.rootViewController = nil
+        self.window?.rootViewController = BaseTabBarController()
+        self.window?.makeKeyAndVisible()
+        
         return true
+    }
+    
+    @objc func pushToTabBar(noti : Notification){
+        let dic = noti.userInfo
+        if let mainTbar = self.window!.rootViewController as? BaseTabBarController{
+            if dic!["index"] as! Int == 0 {
+                mainTbar.selectedIndex = 2
+            }else if dic!["index"] as! Int == 3{
+                mainTbar.selectedIndex = 3
+            }else{
+                mainTbar.selectedIndex = 1
+            }
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

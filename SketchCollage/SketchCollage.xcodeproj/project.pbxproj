@@ -75,6 +75,11 @@
 		F2978BB521907CA80052693F /* NSDate+DateToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BAE21907CA80052693F /* NSDate+DateToString.swift */; };
 		F2978BB621907CA80052693F /* UIImage+getImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F2978BAF21907CA80052693F /* UIImage+getImage.m */; };
 		F2978BB721907CA80052693F /* UILabel+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BB021907CA80052693F /* UILabel+Layer.swift */; };
+		F2978BC02190801F0052693F /* SWGlobalIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BB92190801F0052693F /* SWGlobalIdentifier.swift */; };
+		F2978BC12190801F0052693F /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BBA2190801F0052693F /* BaseTabBarController.swift */; };
+		F2978BC22190801F0052693F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BBB2190801F0052693F /* BaseViewController.swift */; };
+		F2978BC32190801F0052693F /* FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BBD2190801F0052693F /* FilePath.swift */; };
+		F2978BC42190801F0052693F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BBE2190801F0052693F /* BaseNavigationController.swift */; };
 		F914EBAB7B60C43E081B37AC /* Pods_SketchCollage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DAC5FE58ED867272283FA5 /* Pods_SketchCollage.framework */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +184,12 @@
 		F2978BAE21907CA80052693F /* NSDate+DateToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+DateToString.swift"; sourceTree = "<group>"; };
 		F2978BAF21907CA80052693F /* UIImage+getImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+getImage.m"; sourceTree = "<group>"; };
 		F2978BB021907CA80052693F /* UILabel+Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Layer.swift"; sourceTree = "<group>"; };
+		F2978BB92190801F0052693F /* SWGlobalIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWGlobalIdentifier.swift; sourceTree = "<group>"; };
+		F2978BBA2190801F0052693F /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		F2978BBB2190801F0052693F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F2978BBC2190801F0052693F /* HouseRent_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseRent_Header.h; sourceTree = "<group>"; };
+		F2978BBD2190801F0052693F /* FilePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePath.swift; sourceTree = "<group>"; };
+		F2978BBE2190801F0052693F /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,9 +265,10 @@
 				F22780272188B0E30049CF62 /* HomeViewController.swift */,
 				F227802D2188C2830049CF62 /* Home */,
 				F22780292188B1F10049CF62 /* Config */,
-				F2277FFA2188AF4E0049CF62 /* Main.storyboard */,
+				F2978BB82190801F0052693F /* Configration */,
 				F2978BA821907CA80052693F /* Extension(延展) */,
 				F2978B46219076BF0052693F /* Manager */,
+				F2277FFA2188AF4E0049CF62 /* Main.storyboard */,
 				F22780002188AF510049CF62 /* Assets.xcassets */,
 				F22780022188AF510049CF62 /* LaunchScreen.storyboard */,
 				F22780052188AF510049CF62 /* Info.plist */,
@@ -446,6 +458,20 @@
 				F2978BB021907CA80052693F /* UILabel+Layer.swift */,
 			);
 			path = "Extension(延展)";
+			sourceTree = "<group>";
+		};
+		F2978BB82190801F0052693F /* Configration */ = {
+			isa = PBXGroup;
+			children = (
+				F2978BB92190801F0052693F /* SWGlobalIdentifier.swift */,
+				F2978BBA2190801F0052693F /* BaseTabBarController.swift */,
+				F2978BBB2190801F0052693F /* BaseViewController.swift */,
+				F2978BBC2190801F0052693F /* HouseRent_Header.h */,
+				F2978BBD2190801F0052693F /* FilePath.swift */,
+				F2978BBE2190801F0052693F /* BaseNavigationController.swift */,
+			);
+			name = Configration;
+			path = "Config(配置)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -644,11 +670,13 @@
 			files = (
 				F2978B9A219076BF0052693F /* GWLPhotoGroupDetailController.m in Sources */,
 				F2978B89219076BF0052693F /* UIViewController+Extension.swift in Sources */,
+				F2978BC12190801F0052693F /* BaseTabBarController.swift in Sources */,
 				F2978BA4219076BF0052693F /* SWAlertViewController.swift in Sources */,
 				F2978B9F219076BF0052693F /* SWCommentViewController.swift in Sources */,
 				F22780372188C2DB0049CF62 /* HotKeysPresenter.swift in Sources */,
 				F2978B8F219076BF0052693F /* SWPopUpsContainerViewController.swift in Sources */,
 				F2978B94219076BF0052693F /* SWFormatValidManager.swift in Sources */,
+				F2978BC42190801F0052693F /* BaseNavigationController.swift in Sources */,
 				F2978B98219076BF0052693F /* GWLPhotoGroupTableViewController.m in Sources */,
 				F2277FF92188AF4E0049CF62 /* ViewController.swift in Sources */,
 				F2978BA5219076BF0052693F /* SWImagePickerManager.swift in Sources */,
@@ -659,6 +687,7 @@
 				F2978B87219076BF0052693F /* SWProtocols.swift in Sources */,
 				F2978B83219076BF0052693F /* UIImage+Extension.swift in Sources */,
 				F2978BA3219076BF0052693F /* SWGlobalTypealias.swift in Sources */,
+				F2978BC02190801F0052693F /* SWGlobalIdentifier.swift in Sources */,
 				F2978BB721907CA80052693F /* UILabel+Layer.swift in Sources */,
 				F2978B92219076BF0052693F /* SWLabel.swift in Sources */,
 				F2978B7D219076BF0052693F /* SWMultiButtonView.swift in Sources */,
@@ -696,7 +725,9 @@
 				F2978B45218F28920052693F /* APIManager.swift in Sources */,
 				F227803C2188CD8C0049CF62 /* HotKeysCell.swift in Sources */,
 				F2978B8A219076BF0052693F /* SWString.swift in Sources */,
+				F2978BC32190801F0052693F /* FilePath.swift in Sources */,
 				F2978B8B219076BF0052693F /* SWTipButton.swift in Sources */,
+				F2978BC22190801F0052693F /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
