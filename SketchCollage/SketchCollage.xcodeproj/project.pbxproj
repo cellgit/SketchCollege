@@ -24,6 +24,57 @@
 		F227803C2188CD8C0049CF62 /* HotKeysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F227803A2188CD8C0049CF62 /* HotKeysCell.swift */; };
 		F227803D2188CD8C0049CF62 /* HotKeysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F227803B2188CD8C0049CF62 /* HotKeysCell.xib */; };
 		F2978B45218F28920052693F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B44218F28920052693F /* APIManager.swift */; };
+		F2978B7C219076BF0052693F /* SWGlobalStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B47219076BF0052693F /* SWGlobalStruct.swift */; };
+		F2978B7D219076BF0052693F /* SWMultiButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B48219076BF0052693F /* SWMultiButtonView.swift */; };
+		F2978B7E219076BF0052693F /* SWGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B49219076BF0052693F /* SWGridView.swift */; };
+		F2978B7F219076BF0052693F /* SWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B4A219076BF0052693F /* SWButton.swift */; };
+		F2978B80219076BF0052693F /* SWTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B4B219076BF0052693F /* SWTimerManager.swift */; };
+		F2978B81219076BF0052693F /* EvaluateStarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2978B4D219076BF0052693F /* EvaluateStarView.xib */; };
+		F2978B82219076BF0052693F /* EvaluateStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B4E219076BF0052693F /* EvaluateStarView.swift */; };
+		F2978B83219076BF0052693F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B4F219076BF0052693F /* UIImage+Extension.swift */; };
+		F2978B84219076BF0052693F /* SWWebUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B50219076BF0052693F /* SWWebUrl.swift */; };
+		F2978B85219076BF0052693F /* SWPlayerMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B51219076BF0052693F /* SWPlayerMaskView.swift */; };
+		F2978B86219076BF0052693F /* SWCellReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B52219076BF0052693F /* SWCellReuseIdentifier.swift */; };
+		F2978B87219076BF0052693F /* SWProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B53219076BF0052693F /* SWProtocols.swift */; };
+		F2978B88219076BF0052693F /* SWBaseControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B54219076BF0052693F /* SWBaseControls.swift */; };
+		F2978B89219076BF0052693F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B55219076BF0052693F /* UIViewController+Extension.swift */; };
+		F2978B8A219076BF0052693F /* SWString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B56219076BF0052693F /* SWString.swift */; };
+		F2978B8B219076BF0052693F /* SWTipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B57219076BF0052693F /* SWTipButton.swift */; };
+		F2978B8C219076BF0052693F /* SWDeviceModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B58219076BF0052693F /* SWDeviceModelManager.swift */; };
+		F2978B8D219076BF0052693F /* SWGlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B59219076BF0052693F /* SWGlobalConfig.swift */; };
+		F2978B8E219076BF0052693F /* SWPopUpsSucceedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2978B5B219076BF0052693F /* SWPopUpsSucceedView.xib */; };
+		F2978B8F219076BF0052693F /* SWPopUpsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B5C219076BF0052693F /* SWPopUpsContainerViewController.swift */; };
+		F2978B90219076BF0052693F /* SWPopUpsSucceedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B5D219076BF0052693F /* SWPopUpsSucceedView.swift */; };
+		F2978B91219076BF0052693F /* SWPopUpsContainerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2978B5E219076BF0052693F /* SWPopUpsContainerViewController.storyboard */; };
+		F2978B92219076BF0052693F /* SWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B5F219076BF0052693F /* SWLabel.swift */; };
+		F2978B93219076BF0052693F /* SWFlowLayoutButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B60219076BF0052693F /* SWFlowLayoutButtonView.swift */; };
+		F2978B94219076BF0052693F /* SWFormatValidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B61219076BF0052693F /* SWFormatValidManager.swift */; };
+		F2978B95219076BF0052693F /* SWUploadImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B63219076BF0052693F /* SWUploadImageModel.swift */; };
+		F2978B96219076BF0052693F /* SWCommentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B64219076BF0052693F /* SWCommentPresenter.swift */; };
+		F2978B97219076BF0052693F /* GWLPhotoLibrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2978B66219076BF0052693F /* GWLPhotoLibrayController.m */; };
+		F2978B98219076BF0052693F /* GWLPhotoGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2978B69219076BF0052693F /* GWLPhotoGroupTableViewController.m */; };
+		F2978B99219076BF0052693F /* GWLPhotoSelector.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2978B6C219076BF0052693F /* GWLPhotoSelector.bundle */; };
+		F2978B9A219076BF0052693F /* GWLPhotoGroupDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2978B6D219076BF0052693F /* GWLPhotoGroupDetailController.m */; };
+		F2978B9B219076BF0052693F /* SWTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2978B6E219076BF0052693F /* SWTextViewCell.xib */; };
+		F2978B9C219076BF0052693F /* SWImagesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B6F219076BF0052693F /* SWImagesTableCell.swift */; };
+		F2978B9D219076BF0052693F /* SWTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B70219076BF0052693F /* SWTextViewCell.swift */; };
+		F2978B9E219076BF0052693F /* SWCommentTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B71219076BF0052693F /* SWCommentTitleCell.swift */; };
+		F2978B9F219076BF0052693F /* SWCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B72219076BF0052693F /* SWCommentViewController.swift */; };
+		F2978BA0219076BF0052693F /* SWCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B73219076BF0052693F /* SWCommentView.swift */; };
+		F2978BA1219076BF0052693F /* SWCommentTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2978B74219076BF0052693F /* SWCommentTitleCell.xib */; };
+		F2978BA2219076BF0052693F /* SWImagesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2978B75219076BF0052693F /* SWImagesTableCell.xib */; };
+		F2978BA3219076BF0052693F /* SWGlobalTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B76219076BF0052693F /* SWGlobalTypealias.swift */; };
+		F2978BA4219076BF0052693F /* SWAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B77219076BF0052693F /* SWAlertViewController.swift */; };
+		F2978BA5219076BF0052693F /* SWImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B79219076BF0052693F /* SWImagePickerManager.swift */; };
+		F2978BA6219076BF0052693F /* SWPhotosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B7A219076BF0052693F /* SWPhotosManager.swift */; };
+		F2978BA7219076BF0052693F /* SWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978B7B219076BF0052693F /* SWView.swift */; };
+		F2978BB121907CA80052693F /* UIButton+ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BA921907CA80052693F /* UIButton+ClosureButton.swift */; };
+		F2978BB221907CA80052693F /* UIColor+cmColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BAA21907CA80052693F /* UIColor+cmColor.swift */; };
+		F2978BB321907CA80052693F /* SWTapRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BAC21907CA80052693F /* SWTapRecognizer.swift */; };
+		F2978BB421907CA80052693F /* String+filtrationString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BAD21907CA80052693F /* String+filtrationString.swift */; };
+		F2978BB521907CA80052693F /* NSDate+DateToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BAE21907CA80052693F /* NSDate+DateToString.swift */; };
+		F2978BB621907CA80052693F /* UIImage+getImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F2978BAF21907CA80052693F /* UIImage+getImage.m */; };
+		F2978BB721907CA80052693F /* UILabel+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BB021907CA80052693F /* UILabel+Layer.swift */; };
 		F914EBAB7B60C43E081B37AC /* Pods_SketchCollage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DAC5FE58ED867272283FA5 /* Pods_SketchCollage.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +123,62 @@
 		F227803A2188CD8C0049CF62 /* HotKeysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeysCell.swift; sourceTree = "<group>"; };
 		F227803B2188CD8C0049CF62 /* HotKeysCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotKeysCell.xib; sourceTree = "<group>"; };
 		F2978B44218F28920052693F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F2978B47219076BF0052693F /* SWGlobalStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWGlobalStruct.swift; sourceTree = "<group>"; };
+		F2978B48219076BF0052693F /* SWMultiButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWMultiButtonView.swift; sourceTree = "<group>"; };
+		F2978B49219076BF0052693F /* SWGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWGridView.swift; sourceTree = "<group>"; };
+		F2978B4A219076BF0052693F /* SWButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWButton.swift; sourceTree = "<group>"; };
+		F2978B4B219076BF0052693F /* SWTimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWTimerManager.swift; sourceTree = "<group>"; };
+		F2978B4D219076BF0052693F /* EvaluateStarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EvaluateStarView.xib; sourceTree = "<group>"; };
+		F2978B4E219076BF0052693F /* EvaluateStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvaluateStarView.swift; sourceTree = "<group>"; };
+		F2978B4F219076BF0052693F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F2978B50219076BF0052693F /* SWWebUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWWebUrl.swift; sourceTree = "<group>"; };
+		F2978B51219076BF0052693F /* SWPlayerMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPlayerMaskView.swift; sourceTree = "<group>"; };
+		F2978B52219076BF0052693F /* SWCellReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCellReuseIdentifier.swift; sourceTree = "<group>"; };
+		F2978B53219076BF0052693F /* SWProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWProtocols.swift; sourceTree = "<group>"; };
+		F2978B54219076BF0052693F /* SWBaseControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWBaseControls.swift; sourceTree = "<group>"; };
+		F2978B55219076BF0052693F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F2978B56219076BF0052693F /* SWString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWString.swift; sourceTree = "<group>"; };
+		F2978B57219076BF0052693F /* SWTipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWTipButton.swift; sourceTree = "<group>"; };
+		F2978B58219076BF0052693F /* SWDeviceModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWDeviceModelManager.swift; sourceTree = "<group>"; };
+		F2978B59219076BF0052693F /* SWGlobalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWGlobalConfig.swift; sourceTree = "<group>"; };
+		F2978B5B219076BF0052693F /* SWPopUpsSucceedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWPopUpsSucceedView.xib; sourceTree = "<group>"; };
+		F2978B5C219076BF0052693F /* SWPopUpsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPopUpsContainerViewController.swift; sourceTree = "<group>"; };
+		F2978B5D219076BF0052693F /* SWPopUpsSucceedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPopUpsSucceedView.swift; sourceTree = "<group>"; };
+		F2978B5E219076BF0052693F /* SWPopUpsContainerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SWPopUpsContainerViewController.storyboard; sourceTree = "<group>"; };
+		F2978B5F219076BF0052693F /* SWLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWLabel.swift; sourceTree = "<group>"; };
+		F2978B60219076BF0052693F /* SWFlowLayoutButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWFlowLayoutButtonView.swift; sourceTree = "<group>"; };
+		F2978B61219076BF0052693F /* SWFormatValidManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWFormatValidManager.swift; sourceTree = "<group>"; };
+		F2978B63219076BF0052693F /* SWUploadImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWUploadImageModel.swift; sourceTree = "<group>"; };
+		F2978B64219076BF0052693F /* SWCommentPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCommentPresenter.swift; sourceTree = "<group>"; };
+		F2978B66219076BF0052693F /* GWLPhotoLibrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLPhotoLibrayController.m; sourceTree = "<group>"; };
+		F2978B67219076BF0052693F /* GWLPhotoGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLPhotoGroupTableViewController.h; sourceTree = "<group>"; };
+		F2978B68219076BF0052693F /* GWLPhotoGroupDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLPhotoGroupDetailController.h; sourceTree = "<group>"; };
+		F2978B69219076BF0052693F /* GWLPhotoGroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLPhotoGroupTableViewController.m; sourceTree = "<group>"; };
+		F2978B6A219076BF0052693F /* GWLPhotoLibrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLPhotoLibrayController.h; sourceTree = "<group>"; };
+		F2978B6B219076BF0052693F /* GWLPhotoSelectorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLPhotoSelectorHeader.h; sourceTree = "<group>"; };
+		F2978B6C219076BF0052693F /* GWLPhotoSelector.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GWLPhotoSelector.bundle; sourceTree = "<group>"; };
+		F2978B6D219076BF0052693F /* GWLPhotoGroupDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLPhotoGroupDetailController.m; sourceTree = "<group>"; };
+		F2978B6E219076BF0052693F /* SWTextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWTextViewCell.xib; sourceTree = "<group>"; };
+		F2978B6F219076BF0052693F /* SWImagesTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWImagesTableCell.swift; sourceTree = "<group>"; };
+		F2978B70219076BF0052693F /* SWTextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWTextViewCell.swift; sourceTree = "<group>"; };
+		F2978B71219076BF0052693F /* SWCommentTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCommentTitleCell.swift; sourceTree = "<group>"; };
+		F2978B72219076BF0052693F /* SWCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCommentViewController.swift; sourceTree = "<group>"; };
+		F2978B73219076BF0052693F /* SWCommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCommentView.swift; sourceTree = "<group>"; };
+		F2978B74219076BF0052693F /* SWCommentTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWCommentTitleCell.xib; sourceTree = "<group>"; };
+		F2978B75219076BF0052693F /* SWImagesTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWImagesTableCell.xib; sourceTree = "<group>"; };
+		F2978B76219076BF0052693F /* SWGlobalTypealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWGlobalTypealias.swift; sourceTree = "<group>"; };
+		F2978B77219076BF0052693F /* SWAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWAlertViewController.swift; sourceTree = "<group>"; };
+		F2978B79219076BF0052693F /* SWImagePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWImagePickerManager.swift; sourceTree = "<group>"; };
+		F2978B7A219076BF0052693F /* SWPhotosManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPhotosManager.swift; sourceTree = "<group>"; };
+		F2978B7B219076BF0052693F /* SWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWView.swift; sourceTree = "<group>"; };
+		F2978BA921907CA80052693F /* UIButton+ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ClosureButton.swift"; sourceTree = "<group>"; };
+		F2978BAA21907CA80052693F /* UIColor+cmColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+cmColor.swift"; sourceTree = "<group>"; };
+		F2978BAB21907CA80052693F /* UIImage+getImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+getImage.h"; sourceTree = "<group>"; };
+		F2978BAC21907CA80052693F /* SWTapRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWTapRecognizer.swift; sourceTree = "<group>"; };
+		F2978BAD21907CA80052693F /* String+filtrationString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+filtrationString.swift"; sourceTree = "<group>"; };
+		F2978BAE21907CA80052693F /* NSDate+DateToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+DateToString.swift"; sourceTree = "<group>"; };
+		F2978BAF21907CA80052693F /* UIImage+getImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+getImage.m"; sourceTree = "<group>"; };
+		F2978BB021907CA80052693F /* UILabel+Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Layer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +255,8 @@
 				F227802D2188C2830049CF62 /* Home */,
 				F22780292188B1F10049CF62 /* Config */,
 				F2277FFA2188AF4E0049CF62 /* Main.storyboard */,
+				F2978BA821907CA80052693F /* Extension(延展) */,
+				F2978B46219076BF0052693F /* Manager */,
 				F22780002188AF510049CF62 /* Assets.xcassets */,
 				F22780022188AF510049CF62 /* LaunchScreen.storyboard */,
 				F22780052188AF510049CF62 /* Info.plist */,
@@ -227,6 +336,116 @@
 				F227803B2188CD8C0049CF62 /* HotKeysCell.xib */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		F2978B46219076BF0052693F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F2978B78219076BF0052693F /* Photos */,
+				F2978B62219076BF0052693F /* SWComment */,
+				F2978B5A219076BF0052693F /* PopUps */,
+				F2978B4C219076BF0052693F /* StarView */,
+				F2978B47219076BF0052693F /* SWGlobalStruct.swift */,
+				F2978B59219076BF0052693F /* SWGlobalConfig.swift */,
+				F2978B76219076BF0052693F /* SWGlobalTypealias.swift */,
+				F2978B4B219076BF0052693F /* SWTimerManager.swift */,
+				F2978B48219076BF0052693F /* SWMultiButtonView.swift */,
+				F2978B49219076BF0052693F /* SWGridView.swift */,
+				F2978B4A219076BF0052693F /* SWButton.swift */,
+				F2978B4F219076BF0052693F /* UIImage+Extension.swift */,
+				F2978B50219076BF0052693F /* SWWebUrl.swift */,
+				F2978B51219076BF0052693F /* SWPlayerMaskView.swift */,
+				F2978B52219076BF0052693F /* SWCellReuseIdentifier.swift */,
+				F2978B53219076BF0052693F /* SWProtocols.swift */,
+				F2978B54219076BF0052693F /* SWBaseControls.swift */,
+				F2978B55219076BF0052693F /* UIViewController+Extension.swift */,
+				F2978B56219076BF0052693F /* SWString.swift */,
+				F2978B57219076BF0052693F /* SWTipButton.swift */,
+				F2978B58219076BF0052693F /* SWDeviceModelManager.swift */,
+				F2978B5F219076BF0052693F /* SWLabel.swift */,
+				F2978B60219076BF0052693F /* SWFlowLayoutButtonView.swift */,
+				F2978B61219076BF0052693F /* SWFormatValidManager.swift */,
+				F2978B77219076BF0052693F /* SWAlertViewController.swift */,
+				F2978B7B219076BF0052693F /* SWView.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F2978B4C219076BF0052693F /* StarView */ = {
+			isa = PBXGroup;
+			children = (
+				F2978B4E219076BF0052693F /* EvaluateStarView.swift */,
+				F2978B4D219076BF0052693F /* EvaluateStarView.xib */,
+			);
+			path = StarView;
+			sourceTree = "<group>";
+		};
+		F2978B5A219076BF0052693F /* PopUps */ = {
+			isa = PBXGroup;
+			children = (
+				F2978B5B219076BF0052693F /* SWPopUpsSucceedView.xib */,
+				F2978B5C219076BF0052693F /* SWPopUpsContainerViewController.swift */,
+				F2978B5D219076BF0052693F /* SWPopUpsSucceedView.swift */,
+				F2978B5E219076BF0052693F /* SWPopUpsContainerViewController.storyboard */,
+			);
+			path = PopUps;
+			sourceTree = "<group>";
+		};
+		F2978B62219076BF0052693F /* SWComment */ = {
+			isa = PBXGroup;
+			children = (
+				F2978B63219076BF0052693F /* SWUploadImageModel.swift */,
+				F2978B64219076BF0052693F /* SWCommentPresenter.swift */,
+				F2978B65219076BF0052693F /* GWLPhotoSelector */,
+				F2978B6E219076BF0052693F /* SWTextViewCell.xib */,
+				F2978B6F219076BF0052693F /* SWImagesTableCell.swift */,
+				F2978B70219076BF0052693F /* SWTextViewCell.swift */,
+				F2978B71219076BF0052693F /* SWCommentTitleCell.swift */,
+				F2978B72219076BF0052693F /* SWCommentViewController.swift */,
+				F2978B73219076BF0052693F /* SWCommentView.swift */,
+				F2978B74219076BF0052693F /* SWCommentTitleCell.xib */,
+				F2978B75219076BF0052693F /* SWImagesTableCell.xib */,
+			);
+			path = SWComment;
+			sourceTree = "<group>";
+		};
+		F2978B65219076BF0052693F /* GWLPhotoSelector */ = {
+			isa = PBXGroup;
+			children = (
+				F2978B66219076BF0052693F /* GWLPhotoLibrayController.m */,
+				F2978B67219076BF0052693F /* GWLPhotoGroupTableViewController.h */,
+				F2978B68219076BF0052693F /* GWLPhotoGroupDetailController.h */,
+				F2978B69219076BF0052693F /* GWLPhotoGroupTableViewController.m */,
+				F2978B6A219076BF0052693F /* GWLPhotoLibrayController.h */,
+				F2978B6B219076BF0052693F /* GWLPhotoSelectorHeader.h */,
+				F2978B6C219076BF0052693F /* GWLPhotoSelector.bundle */,
+				F2978B6D219076BF0052693F /* GWLPhotoGroupDetailController.m */,
+			);
+			path = GWLPhotoSelector;
+			sourceTree = "<group>";
+		};
+		F2978B78219076BF0052693F /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				F2978B79219076BF0052693F /* SWImagePickerManager.swift */,
+				F2978B7A219076BF0052693F /* SWPhotosManager.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		F2978BA821907CA80052693F /* Extension(延展) */ = {
+			isa = PBXGroup;
+			children = (
+				F2978BA921907CA80052693F /* UIButton+ClosureButton.swift */,
+				F2978BAA21907CA80052693F /* UIColor+cmColor.swift */,
+				F2978BAB21907CA80052693F /* UIImage+getImage.h */,
+				F2978BAC21907CA80052693F /* SWTapRecognizer.swift */,
+				F2978BAD21907CA80052693F /* String+filtrationString.swift */,
+				F2978BAE21907CA80052693F /* NSDate+DateToString.swift */,
+				F2978BAF21907CA80052693F /* UIImage+getImage.m */,
+				F2978BB021907CA80052693F /* UILabel+Layer.swift */,
+			);
+			path = "Extension(延展)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,8 +555,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F22780042188AF510049CF62 /* LaunchScreen.storyboard in Resources */,
+				F2978BA2219076BF0052693F /* SWImagesTableCell.xib in Resources */,
 				F22780012188AF510049CF62 /* Assets.xcassets in Resources */,
+				F2978B8E219076BF0052693F /* SWPopUpsSucceedView.xib in Resources */,
 				F2277FFC2188AF4E0049CF62 /* Main.storyboard in Resources */,
+				F2978BA1219076BF0052693F /* SWCommentTitleCell.xib in Resources */,
+				F2978B99219076BF0052693F /* GWLPhotoSelector.bundle in Resources */,
+				F2978B91219076BF0052693F /* SWPopUpsContainerViewController.storyboard in Resources */,
+				F2978B9B219076BF0052693F /* SWTextViewCell.xib in Resources */,
+				F2978B81219076BF0052693F /* EvaluateStarView.xib in Resources */,
 				F227803D2188CD8C0049CF62 /* HotKeysCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,17 +642,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2978B9A219076BF0052693F /* GWLPhotoGroupDetailController.m in Sources */,
+				F2978B89219076BF0052693F /* UIViewController+Extension.swift in Sources */,
+				F2978BA4219076BF0052693F /* SWAlertViewController.swift in Sources */,
+				F2978B9F219076BF0052693F /* SWCommentViewController.swift in Sources */,
 				F22780372188C2DB0049CF62 /* HotKeysPresenter.swift in Sources */,
+				F2978B8F219076BF0052693F /* SWPopUpsContainerViewController.swift in Sources */,
+				F2978B94219076BF0052693F /* SWFormatValidManager.swift in Sources */,
+				F2978B98219076BF0052693F /* GWLPhotoGroupTableViewController.m in Sources */,
 				F2277FF92188AF4E0049CF62 /* ViewController.swift in Sources */,
+				F2978BA5219076BF0052693F /* SWImagePickerManager.swift in Sources */,
+				F2978B9C219076BF0052693F /* SWImagesTableCell.swift in Sources */,
+				F2978B90219076BF0052693F /* SWPopUpsSucceedView.swift in Sources */,
 				F2277FF72188AF4E0049CF62 /* AppDelegate.swift in Sources */,
+				F2978BB521907CA80052693F /* NSDate+DateToString.swift in Sources */,
+				F2978B87219076BF0052693F /* SWProtocols.swift in Sources */,
+				F2978B83219076BF0052693F /* UIImage+Extension.swift in Sources */,
+				F2978BA3219076BF0052693F /* SWGlobalTypealias.swift in Sources */,
+				F2978BB721907CA80052693F /* UILabel+Layer.swift in Sources */,
+				F2978B92219076BF0052693F /* SWLabel.swift in Sources */,
+				F2978B7D219076BF0052693F /* SWMultiButtonView.swift in Sources */,
+				F2978BB321907CA80052693F /* SWTapRecognizer.swift in Sources */,
 				F22780352188C2CD0049CF62 /* HotKeysView.swift in Sources */,
+				F2978B97219076BF0052693F /* GWLPhotoLibrayController.m in Sources */,
+				F2978B86219076BF0052693F /* SWCellReuseIdentifier.swift in Sources */,
+				F2978B80219076BF0052693F /* SWTimerManager.swift in Sources */,
+				F2978BB621907CA80052693F /* UIImage+getImage.m in Sources */,
+				F2978B85219076BF0052693F /* SWPlayerMaskView.swift in Sources */,
+				F2978B93219076BF0052693F /* SWFlowLayoutButtonView.swift in Sources */,
+				F2978B88219076BF0052693F /* SWBaseControls.swift in Sources */,
+				F2978B7F219076BF0052693F /* SWButton.swift in Sources */,
 				F227802B2188B1FF0049CF62 /* Theme.swift in Sources */,
 				F22780392188C2E90049CF62 /* HotKeysModel.swift in Sources */,
+				F2978BA7219076BF0052693F /* SWView.swift in Sources */,
+				F2978B96219076BF0052693F /* SWCommentPresenter.swift in Sources */,
+				F2978BA6219076BF0052693F /* SWPhotosManager.swift in Sources */,
 				F2277FFF2188AF4E0049CF62 /* SketchCollage.xcdatamodeld in Sources */,
+				F2978B8C219076BF0052693F /* SWDeviceModelManager.swift in Sources */,
+				F2978B95219076BF0052693F /* SWUploadImageModel.swift in Sources */,
+				F2978B84219076BF0052693F /* SWWebUrl.swift in Sources */,
+				F2978B82219076BF0052693F /* EvaluateStarView.swift in Sources */,
+				F2978BB421907CA80052693F /* String+filtrationString.swift in Sources */,
+				F2978BB121907CA80052693F /* UIButton+ClosureButton.swift in Sources */,
+				F2978B9E219076BF0052693F /* SWCommentTitleCell.swift in Sources */,
+				F2978B7E219076BF0052693F /* SWGridView.swift in Sources */,
+				F2978B8D219076BF0052693F /* SWGlobalConfig.swift in Sources */,
+				F2978B7C219076BF0052693F /* SWGlobalStruct.swift in Sources */,
+				F2978B9D219076BF0052693F /* SWTextViewCell.swift in Sources */,
+				F2978BA0219076BF0052693F /* SWCommentView.swift in Sources */,
+				F2978BB221907CA80052693F /* UIColor+cmColor.swift in Sources */,
 				F22780332188C2BC0049CF62 /* HotKeysViewController.swift in Sources */,
 				F22780282188B0E30049CF62 /* HomeViewController.swift in Sources */,
 				F2978B45218F28920052693F /* APIManager.swift in Sources */,
 				F227803C2188CD8C0049CF62 /* HotKeysCell.swift in Sources */,
+				F2978B8A219076BF0052693F /* SWString.swift in Sources */,
+				F2978B8B219076BF0052693F /* SWTipButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
