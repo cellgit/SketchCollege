@@ -1,21 +1,19 @@
 //
-//  HotKeysView.swift
+//  HomeView.swift
 //  SketchCollage
 //
-//  Created by 刘宏立 on 2018/10/31.
+//  Created by 刘宏立 on 2018/11/5.
 //  Copyright © 2018 lhl. All rights reserved.
 //
 
 import UIKit
 
-class HotKeysView: UIView {
+class HomeView: UIView {
     
-    var viewController = HotKeysViewController()
-    let KHotKeysCell = "HotKeysCell"
+    var viewController = HomeViewController()
+    let KUITableViewCell = "UITableViewCell"
     
     var tableView: UITableView!
-    
-    var dataList = [HotKeysModel]()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,11 +33,11 @@ class HotKeysView: UIView {
         tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
         tableView.separatorInset = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: NavHeight + TabHeight, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: SWSize.navBarHeight, left: 0, bottom: SWSize.navBarHeight + SWSize.tabBarHeight, right: 0)
+        
         
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
-//            tableView.contentInset = UIEdgeInsets(top: NavHeight + 20, left: 0, bottom: 0, right: 0)
             if SWSize.navBarHeight == 88 {
                 tableView.contentInset = UIEdgeInsets(top: 140, left: 0, bottom: 0, right: 0)
             }
@@ -48,10 +46,12 @@ class HotKeysView: UIView {
             }
         } else {}
         
-        let arrayM = [KHotKeysCell]
+        let arrayM = [KUITableViewCell]
         for str in arrayM {
-            self.tableView!.register(UINib(nibName:str, bundle:nil),
-                                     forCellReuseIdentifier:str)
+//            self.tableView!.register(UINib(nibName:str, bundle:nil), forCellReuseIdentifier:str)
+            
+            self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: str)
+            
         }
         tableView.delegate = self
         tableView.dataSource = self
@@ -59,31 +59,22 @@ class HotKeysView: UIView {
 
 }
 
-
-extension HotKeysView: UITableViewDataSource,UITableViewDelegate {
+extension HomeView: UITableViewDataSource,UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        if dataList.isEmpty {
-            return 0
-        }
-        return dataList.count
+        return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        if dataList.isEmpty {
-            return UITableViewCell.init()
-        }
-        
-        let cell :HotKeysCell = tableView.dequeueReusableCell(withIdentifier: KHotKeysCell, for: indexPath) as! HotKeysCell
-        let model: HotKeysModel = dataList[indexPath.section]
-        cell.model = model
+        let cell :UITableViewCell = tableView.dequeueReusableCell(withIdentifier: KUITableViewCell, for: indexPath)
         
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let vc = HotKeysViewController()
+        self.viewController.navigationController?.pushViewController(vc, animated: true)
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.01
@@ -91,27 +82,19 @@ extension HotKeysView: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 8.0
     }
-    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let view = UIView.init(frame: CGRect(x: 0, y: 0, width: AppWidth, height: 0))
-//        return view
         return nil
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//        let view = UIView.init(frame: CGRect(x: 0, y: 0, width: AppWidth, height: 0))
-//        return view
         return nil
     }
 }
 
 
 
-extension HotKeysView: SWViewProtocol {
+extension HomeView: SWViewProtocol {
     func showView(data: SWSucceedParamsStruct<Any>) {
-//        print("HotKeysViewData ==== \(data)")
-        
-        self.dataList = data.array as! [HotKeysModel]
-        
+        //        print("HotKeysViewData ==== \(data)")
         DispatchQueue.main.async(execute: {
             self.tableView.reloadData()
         })

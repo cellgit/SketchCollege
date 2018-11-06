@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F2277FF72188AF4E0049CF62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2277FF62188AF4E0049CF62 /* AppDelegate.swift */; };
-		F2277FF92188AF4E0049CF62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2277FF82188AF4E0049CF62 /* ViewController.swift */; };
-		F2277FFC2188AF4E0049CF62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2277FFA2188AF4E0049CF62 /* Main.storyboard */; };
 		F2277FFF2188AF4E0049CF62 /* SketchCollage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2277FFD2188AF4E0049CF62 /* SketchCollage.xcdatamodeld */; };
 		F22780012188AF510049CF62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22780002188AF510049CF62 /* Assets.xcassets */; };
 		F22780042188AF510049CF62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22780022188AF510049CF62 /* LaunchScreen.storyboard */; };
@@ -75,11 +73,8 @@
 		F2978BB521907CA80052693F /* NSDate+DateToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BAE21907CA80052693F /* NSDate+DateToString.swift */; };
 		F2978BB621907CA80052693F /* UIImage+getImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F2978BAF21907CA80052693F /* UIImage+getImage.m */; };
 		F2978BB721907CA80052693F /* UILabel+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BB021907CA80052693F /* UILabel+Layer.swift */; };
-		F2978BC02190801F0052693F /* SWGlobalIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BB92190801F0052693F /* SWGlobalIdentifier.swift */; };
-		F2978BC12190801F0052693F /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BBA2190801F0052693F /* BaseTabBarController.swift */; };
-		F2978BC22190801F0052693F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BBB2190801F0052693F /* BaseViewController.swift */; };
-		F2978BC32190801F0052693F /* FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BBD2190801F0052693F /* FilePath.swift */; };
-		F2978BC42190801F0052693F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BBE2190801F0052693F /* BaseNavigationController.swift */; };
+		F2978BC72190835F0052693F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BC62190835F0052693F /* HomeView.swift */; };
+		F2978BCE21908CF80052693F /* SWMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2978BCD21908CF80052693F /* SWMainViewController.swift */; };
 		F914EBAB7B60C43E081B37AC /* Pods_SketchCollage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DAC5FE58ED867272283FA5 /* Pods_SketchCollage.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,8 +101,6 @@
 		D263ECEB7CDCAA4BBFED4A62 /* Pods-SketchCollage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SketchCollage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SketchCollage/Pods-SketchCollage.debug.xcconfig"; sourceTree = "<group>"; };
 		F2277FF32188AF4E0049CF62 /* SketchCollage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchCollage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2277FF62188AF4E0049CF62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2277FF82188AF4E0049CF62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F2277FFB2188AF4E0049CF62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2277FFE2188AF4E0049CF62 /* SketchCollage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SketchCollage.xcdatamodel; sourceTree = "<group>"; };
 		F22780002188AF510049CF62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F22780032188AF510049CF62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -184,12 +177,8 @@
 		F2978BAE21907CA80052693F /* NSDate+DateToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+DateToString.swift"; sourceTree = "<group>"; };
 		F2978BAF21907CA80052693F /* UIImage+getImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+getImage.m"; sourceTree = "<group>"; };
 		F2978BB021907CA80052693F /* UILabel+Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Layer.swift"; sourceTree = "<group>"; };
-		F2978BB92190801F0052693F /* SWGlobalIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWGlobalIdentifier.swift; sourceTree = "<group>"; };
-		F2978BBA2190801F0052693F /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
-		F2978BBB2190801F0052693F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		F2978BBC2190801F0052693F /* HouseRent_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseRent_Header.h; sourceTree = "<group>"; };
-		F2978BBD2190801F0052693F /* FilePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePath.swift; sourceTree = "<group>"; };
-		F2978BBE2190801F0052693F /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		F2978BC62190835F0052693F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F2978BCD21908CF80052693F /* SWMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,14 +250,11 @@
 			isa = PBXGroup;
 			children = (
 				F2277FF62188AF4E0049CF62 /* AppDelegate.swift */,
-				F2277FF82188AF4E0049CF62 /* ViewController.swift */,
-				F22780272188B0E30049CF62 /* HomeViewController.swift */,
+				F2978BCC21908CF80052693F /* Main */,
 				F227802D2188C2830049CF62 /* Home */,
 				F22780292188B1F10049CF62 /* Config */,
-				F2978BB82190801F0052693F /* Configration */,
 				F2978BA821907CA80052693F /* Extension(延展) */,
 				F2978B46219076BF0052693F /* Manager */,
-				F2277FFA2188AF4E0049CF62 /* Main.storyboard */,
 				F22780002188AF510049CF62 /* Assets.xcassets */,
 				F22780022188AF510049CF62 /* LaunchScreen.storyboard */,
 				F22780052188AF510049CF62 /* Info.plist */,
@@ -327,6 +313,7 @@
 		F227802F2188C2830049CF62 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				F22780272188B0E30049CF62 /* HomeViewController.swift */,
 				F22780322188C2BC0049CF62 /* HotKeysViewController.swift */,
 			);
 			path = vc;
@@ -343,6 +330,7 @@
 		F22780312188C2830049CF62 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F2978BC62190835F0052693F /* HomeView.swift */,
 				F22780342188C2CD0049CF62 /* HotKeysView.swift */,
 				F227803A2188CD8C0049CF62 /* HotKeysCell.swift */,
 				F227803B2188CD8C0049CF62 /* HotKeysCell.xib */,
@@ -460,18 +448,12 @@
 			path = "Extension(延展)";
 			sourceTree = "<group>";
 		};
-		F2978BB82190801F0052693F /* Configration */ = {
+		F2978BCC21908CF80052693F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				F2978BB92190801F0052693F /* SWGlobalIdentifier.swift */,
-				F2978BBA2190801F0052693F /* BaseTabBarController.swift */,
-				F2978BBB2190801F0052693F /* BaseViewController.swift */,
-				F2978BBC2190801F0052693F /* HouseRent_Header.h */,
-				F2978BBD2190801F0052693F /* FilePath.swift */,
-				F2978BBE2190801F0052693F /* BaseNavigationController.swift */,
+				F2978BCD21908CF80052693F /* SWMainViewController.swift */,
 			);
-			name = Configration;
-			path = "Config(配置)";
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -584,7 +566,6 @@
 				F2978BA2219076BF0052693F /* SWImagesTableCell.xib in Resources */,
 				F22780012188AF510049CF62 /* Assets.xcassets in Resources */,
 				F2978B8E219076BF0052693F /* SWPopUpsSucceedView.xib in Resources */,
-				F2277FFC2188AF4E0049CF62 /* Main.storyboard in Resources */,
 				F2978BA1219076BF0052693F /* SWCommentTitleCell.xib in Resources */,
 				F2978B99219076BF0052693F /* GWLPhotoSelector.bundle in Resources */,
 				F2978B91219076BF0052693F /* SWPopUpsContainerViewController.storyboard in Resources */,
@@ -670,15 +651,13 @@
 			files = (
 				F2978B9A219076BF0052693F /* GWLPhotoGroupDetailController.m in Sources */,
 				F2978B89219076BF0052693F /* UIViewController+Extension.swift in Sources */,
-				F2978BC12190801F0052693F /* BaseTabBarController.swift in Sources */,
 				F2978BA4219076BF0052693F /* SWAlertViewController.swift in Sources */,
 				F2978B9F219076BF0052693F /* SWCommentViewController.swift in Sources */,
 				F22780372188C2DB0049CF62 /* HotKeysPresenter.swift in Sources */,
 				F2978B8F219076BF0052693F /* SWPopUpsContainerViewController.swift in Sources */,
 				F2978B94219076BF0052693F /* SWFormatValidManager.swift in Sources */,
-				F2978BC42190801F0052693F /* BaseNavigationController.swift in Sources */,
 				F2978B98219076BF0052693F /* GWLPhotoGroupTableViewController.m in Sources */,
-				F2277FF92188AF4E0049CF62 /* ViewController.swift in Sources */,
+				F2978BC72190835F0052693F /* HomeView.swift in Sources */,
 				F2978BA5219076BF0052693F /* SWImagePickerManager.swift in Sources */,
 				F2978B9C219076BF0052693F /* SWImagesTableCell.swift in Sources */,
 				F2978B90219076BF0052693F /* SWPopUpsSucceedView.swift in Sources */,
@@ -687,13 +666,13 @@
 				F2978B87219076BF0052693F /* SWProtocols.swift in Sources */,
 				F2978B83219076BF0052693F /* UIImage+Extension.swift in Sources */,
 				F2978BA3219076BF0052693F /* SWGlobalTypealias.swift in Sources */,
-				F2978BC02190801F0052693F /* SWGlobalIdentifier.swift in Sources */,
 				F2978BB721907CA80052693F /* UILabel+Layer.swift in Sources */,
 				F2978B92219076BF0052693F /* SWLabel.swift in Sources */,
 				F2978B7D219076BF0052693F /* SWMultiButtonView.swift in Sources */,
 				F2978BB321907CA80052693F /* SWTapRecognizer.swift in Sources */,
 				F22780352188C2CD0049CF62 /* HotKeysView.swift in Sources */,
 				F2978B97219076BF0052693F /* GWLPhotoLibrayController.m in Sources */,
+				F2978BCE21908CF80052693F /* SWMainViewController.swift in Sources */,
 				F2978B86219076BF0052693F /* SWCellReuseIdentifier.swift in Sources */,
 				F2978B80219076BF0052693F /* SWTimerManager.swift in Sources */,
 				F2978BB621907CA80052693F /* UIImage+getImage.m in Sources */,
@@ -725,9 +704,7 @@
 				F2978B45218F28920052693F /* APIManager.swift in Sources */,
 				F227803C2188CD8C0049CF62 /* HotKeysCell.swift in Sources */,
 				F2978B8A219076BF0052693F /* SWString.swift in Sources */,
-				F2978BC32190801F0052693F /* FilePath.swift in Sources */,
 				F2978B8B219076BF0052693F /* SWTipButton.swift in Sources */,
-				F2978BC22190801F0052693F /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,14 +740,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F2277FFA2188AF4E0049CF62 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F2277FFB2188AF4E0049CF62 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F22780022188AF510049CF62 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

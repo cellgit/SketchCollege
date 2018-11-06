@@ -17,26 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.setupAppearance()
         
-        self.window?.rootViewController = nil
-        self.window?.rootViewController = BaseTabBarController()
-        self.window?.makeKeyAndVisible()
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        window?.rootViewController = SWMainViewController()
+        window?.makeKeyAndVisible()
+        
         
         return true
     }
     
-    @objc func pushToTabBar(noti : Notification){
-        let dic = noti.userInfo
-        if let mainTbar = self.window!.rootViewController as? BaseTabBarController{
-            if dic!["index"] as! Int == 0 {
-                mainTbar.selectedIndex = 2
-            }else if dic!["index"] as! Int == 3{
-                mainTbar.selectedIndex = 3
-            }else{
-                mainTbar.selectedIndex = 1
-            }
-        }
-    }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -107,5 +99,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+
+extension AppDelegate {
+    /// 设置外观 appearance 是一个协议，设置控件全局外观
+    func setupAppearance() {
+        // 设置 tabBar 的渲染颜色 - 会设置`后续[外观设置之后的]` UITabBar 的 tintColor 全部是指定的颜色
+        UITabBar.appearance().tintColor = UIColor.magenta
+    }
 }
 
