@@ -24,14 +24,10 @@ class HomeViewController: UIViewController {
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
             navigationController?.navigationItem.largeTitleDisplayMode = .automatic
-//            navigationController?.navigationItem.largeTitleDisplayMode = .always
-//            navigationController?.navigationItem.largeTitleDisplayMode = .never
-            
         } else {
             // Fallback on earlier versions
         }
     }
-    
     func setupUI() {
         self.containerView = HomeView.init(frame: self.view.frame)
         self.containerView.viewController = self

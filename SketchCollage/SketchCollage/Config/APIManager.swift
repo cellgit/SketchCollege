@@ -9,7 +9,6 @@
 import Foundation
 
 class APIManager: NSObject {
-//    https://kokora.herokuapp.com/hotkeys
     static let baseUrl = "https://kokora.herokuapp.com/"
 }
 

@@ -19,21 +19,24 @@ class HotKeysViewController: UIViewController {
         self.title = "Sketch"
         self.view.backgroundColor = UIColor.white
         
+        setupNavBar()
         setupUI()
-        
         reqData()
     }
-
+    
+    func setupNavBar() {
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationController?.navigationItem.largeTitleDisplayMode = .automatic
+        } else {
+            // Fallback on earlier versions
+        }
+    }
     func setupUI() {
         self.containerView = HotKeysView.init(frame: UIScreen.main.bounds)
-        
         self.view.addSubview(self.containerView)
         self.presenter = HotKeysPresenter.init(model: HotKeysModel(), containerView: self.containerView)
     }
-
-    
-    
-    
 }
 
 extension HotKeysViewController {

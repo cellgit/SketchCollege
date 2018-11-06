@@ -13,7 +13,6 @@ class HotKeysPresenter: NSObject {
     var model: SWModelProtocal = HotKeysModel()
     var containerView: SWViewProtocol = HotKeysView()
     
-    
     override init() {
         super.init()
     }

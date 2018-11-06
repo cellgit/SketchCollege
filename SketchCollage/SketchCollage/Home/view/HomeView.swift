@@ -12,18 +12,15 @@ class HomeView: UIView {
     
     var viewController = HomeViewController()
     let KUITableViewCell = "UITableViewCell"
-    
     var tableView: UITableView!
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         setTable()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
     
     func setTable() {
         tableView = UITableView.init(frame: self.frame, style: .grouped)
@@ -34,8 +31,6 @@ class HomeView: UIView {
         tableView.showsVerticalScrollIndicator = false
         tableView.separatorInset = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
         tableView.contentInset = UIEdgeInsets(top: SWSize.navBarHeight, left: 0, bottom: SWSize.navBarHeight + SWSize.tabBarHeight, right: 0)
-        
-        
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
             if SWSize.navBarHeight == 88 {
@@ -49,14 +44,11 @@ class HomeView: UIView {
         let arrayM = [KUITableViewCell]
         for str in arrayM {
 //            self.tableView!.register(UINib(nibName:str, bundle:nil), forCellReuseIdentifier:str)
-            
             self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: str)
-            
         }
         tableView.delegate = self
         tableView.dataSource = self
     }
-
 }
 
 extension HomeView: UITableViewDataSource,UITableViewDelegate {
@@ -89,8 +81,6 @@ extension HomeView: UITableViewDataSource,UITableViewDelegate {
         return nil
     }
 }
-
-
 
 extension HomeView: SWViewProtocol {
     func showView(data: SWSucceedParamsStruct<Any>) {

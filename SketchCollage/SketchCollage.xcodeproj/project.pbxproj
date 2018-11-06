@@ -253,7 +253,7 @@
 				F2978BCC21908CF80052693F /* Main */,
 				F227802D2188C2830049CF62 /* Home */,
 				F22780292188B1F10049CF62 /* Config */,
-				F2978BA821907CA80052693F /* Extension(延展) */,
+				F2978BA821907CA80052693F /* Extension */,
 				F2978B46219076BF0052693F /* Manager */,
 				F22780002188AF510049CF62 /* Assets.xcassets */,
 				F22780022188AF510049CF62 /* LaunchScreen.storyboard */,
@@ -433,7 +433,7 @@
 			path = Photos;
 			sourceTree = "<group>";
 		};
-		F2978BA821907CA80052693F /* Extension(延展) */ = {
+		F2978BA821907CA80052693F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				F2978BA921907CA80052693F /* UIButton+ClosureButton.swift */,
@@ -445,7 +445,7 @@
 				F2978BAF21907CA80052693F /* UIImage+getImage.m */,
 				F2978BB021907CA80052693F /* UILabel+Layer.swift */,
 			);
-			path = "Extension(延展)";
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		F2978BCC21908CF80052693F /* Main */ = {

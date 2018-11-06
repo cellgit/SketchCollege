@@ -10,15 +10,9 @@ import UIKit
 
 class HotKeysCell: UITableViewCell {
     
-    
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var contentLabel: UILabel!
-    
     @IBOutlet weak var descLabel: UILabel!
-    
-    
-    
     
     var model: HotKeysModel! {
         didSet {
@@ -26,8 +20,6 @@ class HotKeysCell: UITableViewCell {
             self.contentLabel.text = model.function
         }
     }
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,7 +31,5 @@ class HotKeysCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    
     
 }

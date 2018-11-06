@@ -15,17 +15,6 @@ import SwiftyJSON
 typealias  ReqSuccess = (_ responseObject: AnyObject?)->Void
 typealias ReqError = (_ error: String)->Void
 
-
-//public let NavigationH: CGFloat = 64
-public let CMMagin: CGFloat = 10
-//public let AppWidth: CGFloat = UIScreen.main.bounds.size.width
-//public let AppHeight: CGFloat = UIScreen.main.bounds.size.height
-//public let AppSize: CGRect = UIScreen.main.bounds
-
-public let NavHeight: CGFloat = UIScreen.main.bounds.size.height == 812 ? 88 : 64
-public let TabHeight : CGFloat = UIScreen.main.bounds.size.height == 812 ? 83 : 49
-public let StaBarHeight : CGFloat = UIScreen.main.bounds.size.height == 812 ? 44 : 20
-
 struct Theme {
     /// ViewController的背景颜色
     static let SDTabBarHeight: CGFloat = 49
