@@ -11,5 +11,8 @@
 
 #import <CommonCrypto/CommonDigest.h>
 
+/// Mob短信验证
+#import <SMS_SDK/SMSSDK.h>
+
 
 #endif /* SketchCollage_Header_h */

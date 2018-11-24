@@ -104,6 +104,16 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Copyright © 2012-2018 mob</string>
+			<key>License</key>
+			<string>Copyright © 2012-2018 mob.com</string>
+			<key>Title</key>
+			<string>MOBFoundation</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>The MIT License (MIT)
 
 Copyright (c) 2014 Philip Kluz (Philip.Kluz@gmail.com)
@@ -250,6 +260,16 @@ THE SOFTWARE.
 			<string>MIT</string>
 			<key>Title</key>
 			<string>SwiftyJSON</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright © 2012-2017 mob.com</string>
+			<key>License</key>
+			<string>Copyright © 2012-2017 mob.com</string>
+			<key>Title</key>
+			<string>mob_smssdk</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

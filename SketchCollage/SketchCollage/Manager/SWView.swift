@@ -114,7 +114,7 @@ extension UIView {
 extension SWView {
     
     /// 使用方法
-//    let containerView = UIView.init(frame: CGRect(x: 0, y: 0, width: AppWidth, height: sectionZeroHeaderHeight))
+//    let containerView = UIView.init(frame: CGRect(x: 0, y: 0, width: SWSize.screenWidth, height: sectionZeroHeaderHeight))
 //    containerView.backgroundColor = UIColor.white
 //    let swtitleView = SWView.init()
 //    let headerView = swtitleView.getTitleView("标题", UIColorFromRGB(0x333333), 15, sectionZeroHeaderHeight, containerView, 4, 17, ThemeColor, 10)

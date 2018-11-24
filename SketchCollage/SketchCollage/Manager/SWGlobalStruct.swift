@@ -68,6 +68,12 @@ struct SWTableDataStruct {
     var identifier = ""
 }
 
+// UITableView 列表的数据 struct, 无image
+struct SWTableViewDataStruct {
+    var title = ""
+    var identifier = ""
+}
+
 
 /// 定义通知、广播名:
 

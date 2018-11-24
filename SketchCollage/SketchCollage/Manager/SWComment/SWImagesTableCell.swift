@@ -80,7 +80,7 @@ class SWImagesTableCell: UITableViewCell,UICollectionViewDelegate,UICollectionVi
     
     func getItemSize() -> (width:CGFloat, height:CGFloat) {
         let scale: CGFloat = 1.0
-        let itemWidth = (AppWidth - 70.0) / 3.0
+        let itemWidth = (SWSize.screenWidth - 70.0) / 3.0
         let itemHeight:CGFloat = itemWidth * scale
         return(itemWidth,itemHeight)
     }

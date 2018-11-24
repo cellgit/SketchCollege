@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSContactsUsageDescription</key>
+	<string>开启通讯录好友</string>
+	<key>MOBAppKey</key>
+	<string>28ebce65d87e8</string>
+	<key>MOBAppSecret</key>
+	<string>6fe3d47b9569866ca091beb62de87955</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

@@ -11,7 +11,7 @@ import UIKit
 struct SWBaseControls {
     func  setLineView(x : CGFloat, y : CGFloat ,width : CGFloat) -> UIView{
          let  lineView = UIView.init(frame: CGRect(x:x,y:y,width : width,height : 1))
-        lineView.backgroundColor = LineColor
+        lineView.backgroundColor = SWColor.line
         return lineView
     }
     

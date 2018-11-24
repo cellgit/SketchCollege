@@ -79,6 +79,10 @@
 		F29791C0219491300052693F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F29791BF219491300052693F /* Localizable.strings */; };
 		F29791C6219492460052693F /* Localizable(English).strings in Resources */ = {isa = PBXBuildFile; fileRef = F29791C5219492460052693F /* Localizable(English).strings */; };
 		F29791C82194926F0052693F /* Localizable(Chinese (Simplified)).strings in Resources */ = {isa = PBXBuildFile; fileRef = F29791C72194926F0052693F /* Localizable(Chinese (Simplified)).strings */; };
+		F2C57F8021A8F0ED009FF207 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C57F7E21A8F0DD009FF207 /* EmailViewController.swift */; };
+		F2C57F8121A8F0ED009FF207 /* EmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C57F7F21A8F0DD009FF207 /* EmailViewController.xib */; };
+		F2C57F9021A8F6F6009FF207 /* SWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C57F8A21A8F6F6009FF207 /* SWBaseViewController.swift */; };
+		F2C57F9121A8F6F6009FF207 /* SWBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C57F8B21A8F6F6009FF207 /* SWBaseTableViewController.swift */; };
 		F914EBAB7B60C43E081B37AC /* Pods_SketchCollage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DAC5FE58ED867272283FA5 /* Pods_SketchCollage.framework */; };
 /* End PBXBuildFile section */
 
@@ -187,6 +191,10 @@
 		F29791BF219491300052693F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F29791C5219492460052693F /* Localizable(English).strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = "Localizable(English).strings"; sourceTree = "<group>"; };
 		F29791C72194926F0052693F /* Localizable(Chinese (Simplified)).strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = "Localizable(Chinese (Simplified)).strings"; sourceTree = "<group>"; };
+		F2C57F7E21A8F0DD009FF207 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		F2C57F7F21A8F0DD009FF207 /* EmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailViewController.xib; sourceTree = "<group>"; };
+		F2C57F8A21A8F6F6009FF207 /* SWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWBaseViewController.swift; sourceTree = "<group>"; };
+		F2C57F8B21A8F6F6009FF207 /* SWBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWBaseTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,7 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				F2277FF62188AF4E0049CF62 /* AppDelegate.swift */,
-				F2978BCC21908CF80052693F /* Main */,
+				F2C57F8221A8F6F6009FF207 /* Classes */,
 				F227802D2188C2830049CF62 /* Home */,
 				F22780292188B1F10049CF62 /* Config */,
 				F2978BA821907CA80052693F /* Extension */,
@@ -460,10 +468,38 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		F2978BCC21908CF80052693F /* Main */ = {
+		F2C57F7D21A8F0DD009FF207 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				F2C57F7E21A8F0DD009FF207 /* EmailViewController.swift */,
+				F2C57F7F21A8F0DD009FF207 /* EmailViewController.xib */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		F2C57F8221A8F6F6009FF207 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F2C57F8821A8F6F6009FF207 /* Main */,
+				F2C57F7D21A8F0DD009FF207 /* User */,
+				F2C57F8321A8F6F6009FF207 /* Home */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F2C57F8321A8F6F6009FF207 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F2C57F8821A8F6F6009FF207 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				F2978BCD21908CF80052693F /* SWMainViewController.swift */,
+				F2C57F8A21A8F6F6009FF207 /* SWBaseViewController.swift */,
+				F2C57F8B21A8F6F6009FF207 /* SWBaseTableViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -577,6 +613,7 @@
 				F22780042188AF510049CF62 /* LaunchScreen.storyboard in Resources */,
 				F2978BA2219076BF0052693F /* SWImagesTableCell.xib in Resources */,
 				F22780012188AF510049CF62 /* Assets.xcassets in Resources */,
+				F2C57F8121A8F0ED009FF207 /* EmailViewController.xib in Resources */,
 				F2978B8E219076BF0052693F /* SWPopUpsSucceedView.xib in Resources */,
 				F2978BA1219076BF0052693F /* SWCommentTitleCell.xib in Resources */,
 				F29791C6219492460052693F /* Localizable(English).strings in Resources */,
@@ -678,6 +715,7 @@
 				F2978B9C219076BF0052693F /* SWImagesTableCell.swift in Sources */,
 				F2978B90219076BF0052693F /* SWPopUpsSucceedView.swift in Sources */,
 				F2277FF72188AF4E0049CF62 /* AppDelegate.swift in Sources */,
+				F2C57F8021A8F0ED009FF207 /* EmailViewController.swift in Sources */,
 				F2978BB521907CA80052693F /* NSDate+DateToString.swift in Sources */,
 				F2978B87219076BF0052693F /* SWProtocols.swift in Sources */,
 				F2978B83219076BF0052693F /* UIImage+Extension.swift in Sources */,
@@ -695,6 +733,7 @@
 				F2978B85219076BF0052693F /* SWPlayerMaskView.swift in Sources */,
 				F2978B93219076BF0052693F /* SWFlowLayoutButtonView.swift in Sources */,
 				F2978B88219076BF0052693F /* SWBaseControls.swift in Sources */,
+				F2C57F9121A8F6F6009FF207 /* SWBaseTableViewController.swift in Sources */,
 				F2978B7F219076BF0052693F /* SWButton.swift in Sources */,
 				F227802B2188B1FF0049CF62 /* Theme.swift in Sources */,
 				F22780392188C2E90049CF62 /* HotKeysModel.swift in Sources */,
@@ -715,6 +754,7 @@
 				F2978B9D219076BF0052693F /* SWTextViewCell.swift in Sources */,
 				F2978BA0219076BF0052693F /* SWCommentView.swift in Sources */,
 				F2978BB221907CA80052693F /* UIColor+cmColor.swift in Sources */,
+				F2C57F9021A8F6F6009FF207 /* SWBaseViewController.swift in Sources */,
 				F22780332188C2BC0049CF62 /* HotKeysViewController.swift in Sources */,
 				F22780282188B0E30049CF62 /* HomeViewController.swift in Sources */,
 				F2978B45218F28920052693F /* APIManager.swift in Sources */,

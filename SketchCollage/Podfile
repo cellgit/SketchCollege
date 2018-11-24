@@ -18,6 +18,12 @@ pod 'MJRefresh', '~> 3.1.15.7'
 #pod 'JTAppleCalendar', '~> 7.0'
 
 
+#This is Third Lib
+
+pod 'mob_smssdk', '~> 3.2.3'
+
+
+
 end
 
 

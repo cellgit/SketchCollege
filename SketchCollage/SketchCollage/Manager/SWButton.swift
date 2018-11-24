@@ -44,7 +44,7 @@ class SWButton: UIButton {
         self.setTitleColor(SWColor.darkGray, for: .normal)
         self.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -22)
         
-        //        selectBtn.frame = CGRect(x: AppWidth - 90, y: 0, width: 80, height: 29)
+        //        selectBtn.frame = CGRect(x: SWSize.screenWidth - 90, y: 0, width: 80, height: 29)
         
         let imageUnselected = UIImage.init(named: "choose_no")
         let imageSelected = UIImage.init(named: "choose")

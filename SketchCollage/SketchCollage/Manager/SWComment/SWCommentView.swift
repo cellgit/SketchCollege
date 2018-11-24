@@ -80,7 +80,7 @@ class SWCommentView: UIView {
     }
     
     func setTable(){
-        tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: AppWidth, height: AppHeight - NavigationH), style: .plain)
+        tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: SWSize.screenWidth, height: SWSize.screenHeight - SWSize.navBarHeight), style: .plain)
         self.addSubview(tableView)
         
         tableView.showsVerticalScrollIndicator = false

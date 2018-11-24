@@ -18,7 +18,7 @@ protocol SWMultiButtonActionDelegate {
 /// 如果在cell中使用，则需要设置titleView.selectedIndex = selectedButtonTag
 //extension CustomView: SWMultiButtonActionDelegate {
 //    func setTitleView(containerView: UIView) {
-//        let titleView = SWMultiButtonView.init(frame: CGRect(x: 0, y: 0, width: AppWidth, height: 42))
+//        let titleView = SWMultiButtonView.init(frame: CGRect(x: 0, y: 0, width: SWSize.screenWidth, height: 42))
 //        containerView.addSubview(titleView)
 //        titleView.titles = ["全部", "消费", "充值", "提现"]
 //        titleView.selectedIndex = 1
