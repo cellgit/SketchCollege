@@ -24,7 +24,7 @@ extension UnParseJsonModel: SWModelProtocal {
             success(SWSucceedParamsStruct.init(array: array, json: json))
         }) { (error) in
             sendError(error)
-            PrintLog(message:error)
+            print("\(self.description)DataError:\(error)")
         }
         
     }

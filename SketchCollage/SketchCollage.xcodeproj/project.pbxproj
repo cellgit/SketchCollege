@@ -89,6 +89,9 @@
 		F2B6460A21A9AC0800D59F4B /* UserEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6460921A9AC0800D59F4B /* UserEnums.swift */; };
 		F2B6460D21A9AD8700D59F4B /* ModifyPwdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6460B21A9AD8700D59F4B /* ModifyPwdCell.swift */; };
 		F2B6460E21A9AD8700D59F4B /* ModifyPwdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B6460C21A9AD8700D59F4B /* ModifyPwdCell.xib */; };
+		F2B6461021AAC94E00D59F4B /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6460F21AAC94E00D59F4B /* UserInfoModel.swift */; };
+		F2B6461221AAC9C300D59F4B /* FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6461121AAC9C300D59F4B /* FilePath.swift */; };
+		F2B6461421AADB2F00D59F4B /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6461321AADB2F00D59F4B /* SignUpPresenter.swift */; };
 		F2C57F8021A8F0ED009FF207 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C57F7E21A8F0DD009FF207 /* EmailViewController.swift */; };
 		F2C57F8121A8F0ED009FF207 /* EmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C57F7F21A8F0DD009FF207 /* EmailViewController.xib */; };
 		F2C57F9021A8F6F6009FF207 /* SWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C57F8A21A8F6F6009FF207 /* SWBaseViewController.swift */; };
@@ -212,6 +215,9 @@
 		F2B6460921A9AC0800D59F4B /* UserEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEnums.swift; sourceTree = "<group>"; };
 		F2B6460B21A9AD8700D59F4B /* ModifyPwdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyPwdCell.swift; sourceTree = "<group>"; };
 		F2B6460C21A9AD8700D59F4B /* ModifyPwdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModifyPwdCell.xib; sourceTree = "<group>"; };
+		F2B6460F21AAC94E00D59F4B /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		F2B6461121AAC9C300D59F4B /* FilePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePath.swift; sourceTree = "<group>"; };
+		F2B6461321AADB2F00D59F4B /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		F2C57F7E21A8F0DD009FF207 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		F2C57F7F21A8F0DD009FF207 /* EmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailViewController.xib; sourceTree = "<group>"; };
 		F2C57F8A21A8F6F6009FF207 /* SWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWBaseViewController.swift; sourceTree = "<group>"; };
@@ -328,6 +334,7 @@
 			children = (
 				F227802A2188B1FF0049CF62 /* Theme.swift */,
 				F2978B44218F28920052693F /* APIManager.swift */,
+				F2B6461121AAC9C300D59F4B /* FilePath.swift */,
 				F227802C2188B7470049CF62 /* SketchCollage-Header.h */,
 			);
 			path = Config;
@@ -494,6 +501,7 @@
 		F2B645F121A99A9B00D59F4B /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F2B6461321AADB2F00D59F4B /* SignUpPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -515,6 +523,7 @@
 		F2B645F321A99A9B00D59F4B /* model */ = {
 			isa = PBXGroup;
 			children = (
+				F2B6460F21AAC94E00D59F4B /* UserInfoModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -800,9 +809,11 @@
 				F2978B9C219076BF0052693F /* SWImagesTableCell.swift in Sources */,
 				F2978B90219076BF0052693F /* SWPopUpsSucceedView.swift in Sources */,
 				F2277FF72188AF4E0049CF62 /* AppDelegate.swift in Sources */,
+				F2B6461221AAC9C300D59F4B /* FilePath.swift in Sources */,
 				F2C57F8021A8F0ED009FF207 /* EmailViewController.swift in Sources */,
 				F2978BB521907CA80052693F /* NSDate+DateToString.swift in Sources */,
 				F2978B87219076BF0052693F /* SWProtocols.swift in Sources */,
+				F2B6461421AADB2F00D59F4B /* SignUpPresenter.swift in Sources */,
 				F2B645F921A99C1B00D59F4B /* SignUpView.swift in Sources */,
 				F2978B83219076BF0052693F /* UIImage+Extension.swift in Sources */,
 				F2978BA3219076BF0052693F /* SWGlobalTypealias.swift in Sources */,
@@ -824,6 +835,7 @@
 				F227802B2188B1FF0049CF62 /* Theme.swift in Sources */,
 				F22780392188C2E90049CF62 /* HotKeysModel.swift in Sources */,
 				F2978BA7219076BF0052693F /* SWView.swift in Sources */,
+				F2B6461021AAC94E00D59F4B /* UserInfoModel.swift in Sources */,
 				F2978B96219076BF0052693F /* SWCommentPresenter.swift in Sources */,
 				F2978BA6219076BF0052693F /* SWPhotosManager.swift in Sources */,
 				F2277FFF2188AF4E0049CF62 /* SketchCollage.xcdatamodeld in Sources */,

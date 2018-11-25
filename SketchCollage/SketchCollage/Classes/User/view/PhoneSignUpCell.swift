@@ -59,7 +59,7 @@ class PhoneSignUpCell: UITableViewCell {
     
     func setupUI() {
         veriCodeBtn.action { (sender) in
-            self.getVeriCodeDelegate.sw_auth_get_verification_code_action(sender)
+            self.getVeriCodeDelegate.sw_auth_get_verification_code_action(sender, self.accountField.text ?? "")
         }
         
         signUpBtn.action { (sender) in

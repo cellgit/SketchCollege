@@ -50,7 +50,8 @@ class SWCommentPresenter: NSObject {
         self.model.requestData(params: params, imgParams: imgParams, isEncrypting: true, success: { (data) in
             self.containerView.showViewUnparse(data: data)
         }) { (error) in
-            PrintLog(message: "\(self.description)DataError:\(error)")
+            print("\(self.description)DataError:\(error)")
+            
         }
     }
 }

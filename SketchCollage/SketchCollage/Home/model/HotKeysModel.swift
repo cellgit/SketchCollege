@@ -35,7 +35,7 @@ extension HotKeysModel : SWModelProtocal {
             
         }) { (error) in
             sendError(error)
-            PrintLog(message:error)
+            print("\(self.description)DataError:\(error)")
         }
     }
 }

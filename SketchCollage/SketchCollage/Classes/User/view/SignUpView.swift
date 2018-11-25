@@ -56,9 +56,6 @@ class SignUpView: UIView {
         self.tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
         tableView.estimatedRowHeight = 100
-//        if #available(iOS 11.0, *) {
-//            tableView.contentInsetAdjustmentBehavior = .never
-//        } else {}
         
         tableView.separatorInset = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
         tableView.contentInset = UIEdgeInsets(top: SWSize.navBarHeight, left: 0, bottom: SWSize.navBarHeight + SWSize.tabBarHeight, right: 0)
@@ -144,6 +141,20 @@ extension SignUpView: UITableViewDataSource,UITableViewDelegate {
 extension SignUpView: SWViewProtocol {
     func showView(data: SWSucceedParamsStruct<Any>) {
         print("SignUpViewData ==== \(data)")
+//        SignUpViewData ==== SWSucceedParamsStruct<Any>(array: [], json: {
+//            "message" : "注册成功",
+//            "data" : {
+//                "accessToken" : "NSIIPoA2T2LP6tuMte0yqUHeUWsKwQhdTTLUE7+8aqk="
+//            },
+//            "status" : 0
+//        })
+        if data.json["status"].stringValue == "0" {
+            print("\(data.json["status"].stringValue)")
+            // 通过token请求用户信息,直接登录
+        }
+        else {
+            print("\(data.json["status"].stringValue)")
+        }
     }
 }
 
@@ -167,8 +178,16 @@ extension SignUpView : SWAuthStepDelegate {
 
 /// 获取验证码
 extension SignUpView : SWAuthVerificationCodeDelegate {
-    func sw_auth_get_verification_code_action(_ sender: UIButton) {
+    func sw_auth_get_verification_code_action(_ sender: UIButton, _ phone: String) {
         print("获取验证码")
+        SMSSDK.getVerificationCode(by: SMSGetCodeMethod.SMS, phoneNumber: phone, zone: "86", result: { (error) in
+            if !(error != nil) {
+                print("获取验证码===== 请求成功")
+            }
+            else {
+                print("获取验证码===== 请求失败 Error: \(String(describing: error))")
+            }
+        })
     }
 }
 
@@ -176,6 +195,45 @@ extension SignUpView : SWAuthVerificationCodeDelegate {
 extension SignUpView : SWAuthSignUpDelegate {
     func sw_auth_sign_up_action(_ sender: UIButton, _ params: SWSignUpStruct) {
         print("注册")
+        if params.account == "" {
+            print("请输入账号")
+            return
+        }
+        else if params.verificationCode == "" {
+            print("请输入验证码")
+            return
+        }
+        else if params.verificationCode == "" {
+            print("请输入正确的验证码")
+            return
+        }
+        else if params.password == "" {
+            print("请输入密码")
+            return
+        }
+        else if params.confirmPassword == "" {
+            print("请确认密码")
+            return
+        }
+        else if params.confirmPassword != params.password {
+            print("请确认密码")
+            return
+        }
+        else {
+            
+//            self.viewController.reqSignUp(params: params)
+            
+            SMSSDK.commitVerificationCode(params.verificationCode, phoneNumber: params.account, zone: "86") { (error) in
+                if !(error != nil) {
+                    print("验证提交成功===== ")
+                    /// 进行注册请求
+                    self.viewController.reqSignUp(params: params)
+                }
+                else {
+                    print("验证提交失败 Error: \(String(describing: error))")
+                }
+            }
+        }
     }
 }
 /// 登录

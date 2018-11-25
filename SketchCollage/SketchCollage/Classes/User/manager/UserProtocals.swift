@@ -16,7 +16,7 @@ protocol SWAuthStepDelegate {
 
 /// 获取验证码代理
 protocol SWAuthVerificationCodeDelegate {
-    func sw_auth_get_verification_code_action(_ sender: UIButton)
+    func sw_auth_get_verification_code_action(_ sender: UIButton, _ phone: String)
 }
 
 /// 注册代理

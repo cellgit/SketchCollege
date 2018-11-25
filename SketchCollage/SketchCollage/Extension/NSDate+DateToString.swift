@@ -60,11 +60,7 @@ extension Date{
         let iMinutes = Int((lTime / 60).truncatingRemainder(dividingBy: 60))
         let iHours = Int(fabs((lTime / 3600).truncatingRemainder(dividingBy: 24)))
         let iDays: Int = Int(lTime / 60 / 60 / 24)
-        PrintLog(message: lTime)
-        PrintLog(message: iSeconds)
-        PrintLog(message: iMinutes)
-        PrintLog(message: iHours)
-        PrintLog(message: iDays)
+        
         var timeString = ""
         if interValTime <= 0{
             timeString = "本课程已截止报名！"

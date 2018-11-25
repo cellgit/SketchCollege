@@ -13,6 +13,9 @@ class SignUpViewController: UIViewController {
     var authStepCmd: AuthStepCmd = .cmdStepSignUp
     
     var containerView: SignUpView!
+    
+    var signUpPresenter: SignUpPresenter!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +67,57 @@ class SignUpViewController: UIViewController {
         containerView = SignUpView(frame: self.view.frame)
         self.view.addSubview(containerView)
         containerView.viewController = self
+        self.signUpPresenter = SignUpPresenter.init(UnParseJsonModel(), containerView)
     }
     
 
+}
+
+
+
+extension SignUpViewController {
+//    func authAction(step: AuthStepCmd) {
+//        switch step {
+//        case .cmdStepSignUp:
+//            reqSignUp()
+//        case .cmdStepSignIn:
+//            reqSignIn()
+//        case .cmdStepModifyPwd:
+//            reqModifyPassword()
+//        default:
+//            break
+//        }
+//    }
+    
+    func reqSignUp(params: SWSignUpStruct) {
+        let pathStr = APIManager.baseUrl + "users/register"
+        let dict = ["account": params.account,
+                    "password": params.password]
+        let params = SWNetworkParamsStruct.init(url: pathStr, dict: dict)
+        print("params===== \(params)")
+        self.signUpPresenter.gotoRequestData(params: params)
+    }
+    
+    /// 使用密码登录
+    func reqSignIn(params: SWSignInStruct) {
+        let pathStr = APIManager.baseUrl + "users/register"
+        let dict = ["account": params.account,
+                    "password": params.password]
+        let params = SWNetworkParamsStruct.init(url: pathStr, dict: dict)
+        print("params===== \(params)")
+        self.signUpPresenter.gotoRequestData(params: params)
+    }
+    
+    /// 使用token登录(注册之后会直接返回token)
+    func reqSignIn(token: SWSignInStruct) {
+        let pathStr = APIManager.baseUrl + "users/register"
+        let dict = ["token": token]
+        let params = SWNetworkParamsStruct.init(url: pathStr, dict: dict)
+        print("params===== \(params)")
+        self.signUpPresenter.gotoRequestData(params: params)
+    }
+    
+    func reqModifyPassword() {
+        
+    }
 }

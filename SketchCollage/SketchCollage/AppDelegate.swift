@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+var UserInfo = NSKeyedUnarchiver.unarchiveObject(withFile: FilePath.filePath(.documentDirectory, senderPath: "/loginUserInfo.archiver")) as? UserInfoModel
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
