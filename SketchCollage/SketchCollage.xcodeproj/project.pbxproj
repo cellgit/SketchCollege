@@ -79,10 +79,21 @@
 		F29791C0219491300052693F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F29791BF219491300052693F /* Localizable.strings */; };
 		F29791C6219492460052693F /* Localizable(English).strings in Resources */ = {isa = PBXBuildFile; fileRef = F29791C5219492460052693F /* Localizable(English).strings */; };
 		F29791C82194926F0052693F /* Localizable(Chinese (Simplified)).strings in Resources */ = {isa = PBXBuildFile; fileRef = F29791C72194926F0052693F /* Localizable(Chinese (Simplified)).strings */; };
+		F2B645F721A99B7400D59F4B /* UnParseJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B645F621A99B7400D59F4B /* UnParseJsonModel.swift */; };
+		F2B645F921A99C1B00D59F4B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B645F821A99C1B00D59F4B /* SignUpView.swift */; };
+		F2B6460021A99CC800D59F4B /* PhoneSignInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B645FE21A99CC800D59F4B /* PhoneSignInCell.swift */; };
+		F2B6460121A99CC800D59F4B /* PhoneSignInCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B645FF21A99CC800D59F4B /* PhoneSignInCell.xib */; };
+		F2B6460421A99CE400D59F4B /* PhoneSignUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6460221A99CE400D59F4B /* PhoneSignUpCell.swift */; };
+		F2B6460521A99CE400D59F4B /* PhoneSignUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B6460321A99CE400D59F4B /* PhoneSignUpCell.xib */; };
+		F2B6460821A9ABA700D59F4B /* UserProtocals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6460721A9ABA700D59F4B /* UserProtocals.swift */; };
+		F2B6460A21A9AC0800D59F4B /* UserEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6460921A9AC0800D59F4B /* UserEnums.swift */; };
+		F2B6460D21A9AD8700D59F4B /* ModifyPwdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6460B21A9AD8700D59F4B /* ModifyPwdCell.swift */; };
+		F2B6460E21A9AD8700D59F4B /* ModifyPwdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B6460C21A9AD8700D59F4B /* ModifyPwdCell.xib */; };
 		F2C57F8021A8F0ED009FF207 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C57F7E21A8F0DD009FF207 /* EmailViewController.swift */; };
 		F2C57F8121A8F0ED009FF207 /* EmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C57F7F21A8F0DD009FF207 /* EmailViewController.xib */; };
 		F2C57F9021A8F6F6009FF207 /* SWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C57F8A21A8F6F6009FF207 /* SWBaseViewController.swift */; };
 		F2C57F9121A8F6F6009FF207 /* SWBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C57F8B21A8F6F6009FF207 /* SWBaseTableViewController.swift */; };
+		F2C57F9A21A99A1B009FF207 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C57F9921A99A1B009FF207 /* SignUpViewController.swift */; };
 		F914EBAB7B60C43E081B37AC /* Pods_SketchCollage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DAC5FE58ED867272283FA5 /* Pods_SketchCollage.framework */; };
 /* End PBXBuildFile section */
 
@@ -191,10 +202,21 @@
 		F29791BF219491300052693F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F29791C5219492460052693F /* Localizable(English).strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = "Localizable(English).strings"; sourceTree = "<group>"; };
 		F29791C72194926F0052693F /* Localizable(Chinese (Simplified)).strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = "Localizable(Chinese (Simplified)).strings"; sourceTree = "<group>"; };
+		F2B645F621A99B7400D59F4B /* UnParseJsonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnParseJsonModel.swift; sourceTree = "<group>"; };
+		F2B645F821A99C1B00D59F4B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F2B645FE21A99CC800D59F4B /* PhoneSignInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSignInCell.swift; sourceTree = "<group>"; };
+		F2B645FF21A99CC800D59F4B /* PhoneSignInCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneSignInCell.xib; sourceTree = "<group>"; };
+		F2B6460221A99CE400D59F4B /* PhoneSignUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSignUpCell.swift; sourceTree = "<group>"; };
+		F2B6460321A99CE400D59F4B /* PhoneSignUpCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneSignUpCell.xib; sourceTree = "<group>"; };
+		F2B6460721A9ABA700D59F4B /* UserProtocals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocals.swift; sourceTree = "<group>"; };
+		F2B6460921A9AC0800D59F4B /* UserEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEnums.swift; sourceTree = "<group>"; };
+		F2B6460B21A9AD8700D59F4B /* ModifyPwdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyPwdCell.swift; sourceTree = "<group>"; };
+		F2B6460C21A9AD8700D59F4B /* ModifyPwdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModifyPwdCell.xib; sourceTree = "<group>"; };
 		F2C57F7E21A8F0DD009FF207 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		F2C57F7F21A8F0DD009FF207 /* EmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailViewController.xib; sourceTree = "<group>"; };
 		F2C57F8A21A8F6F6009FF207 /* SWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWBaseViewController.swift; sourceTree = "<group>"; };
 		F2C57F8B21A8F6F6009FF207 /* SWBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWBaseTableViewController.swift; sourceTree = "<group>"; };
+		F2C57F9921A99A1B009FF207 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +383,7 @@
 		F2978B46219076BF0052693F /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				F2B645F521A99B6300D59F4B /* Model */,
 				F2978B78219076BF0052693F /* Photos */,
 				F2978B62219076BF0052693F /* SWComment */,
 				F2978B5A219076BF0052693F /* PopUps */,
@@ -468,11 +491,69 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		F2B645F121A99A9B00D59F4B /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		F2B645F221A99A9B00D59F4B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F2B645F821A99C1B00D59F4B /* SignUpView.swift */,
+				F2B6460221A99CE400D59F4B /* PhoneSignUpCell.swift */,
+				F2B6460321A99CE400D59F4B /* PhoneSignUpCell.xib */,
+				F2B645FE21A99CC800D59F4B /* PhoneSignInCell.swift */,
+				F2B645FF21A99CC800D59F4B /* PhoneSignInCell.xib */,
+				F2B6460B21A9AD8700D59F4B /* ModifyPwdCell.swift */,
+				F2B6460C21A9AD8700D59F4B /* ModifyPwdCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F2B645F321A99A9B00D59F4B /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F2B645F421A99A9B00D59F4B /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				F2C57F9921A99A1B009FF207 /* SignUpViewController.swift */,
+				F2C57F7E21A8F0DD009FF207 /* EmailViewController.swift */,
+				F2C57F7F21A8F0DD009FF207 /* EmailViewController.xib */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		F2B645F521A99B6300D59F4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2B645F621A99B7400D59F4B /* UnParseJsonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2B6460621A9AB7400D59F4B /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				F2B6460721A9ABA700D59F4B /* UserProtocals.swift */,
+				F2B6460921A9AC0800D59F4B /* UserEnums.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
 		F2C57F7D21A8F0DD009FF207 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				F2C57F7E21A8F0DD009FF207 /* EmailViewController.swift */,
-				F2C57F7F21A8F0DD009FF207 /* EmailViewController.xib */,
+				F2B645F421A99A9B00D59F4B /* vc */,
+				F2B645F221A99A9B00D59F4B /* view */,
+				F2B645F121A99A9B00D59F4B /* presenter */,
+				F2B645F321A99A9B00D59F4B /* model */,
+				F2B6460621A9AB7400D59F4B /* manager */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -623,8 +704,11 @@
 				F2978B9B219076BF0052693F /* SWTextViewCell.xib in Resources */,
 				F29791C0219491300052693F /* Localizable.strings in Resources */,
 				F29791BB21948E480052693F /* sketch_collage_07.png in Resources */,
+				F2B6460121A99CC800D59F4B /* PhoneSignInCell.xib in Resources */,
+				F2B6460521A99CE400D59F4B /* PhoneSignUpCell.xib in Resources */,
 				F2978B81219076BF0052693F /* EvaluateStarView.xib in Resources */,
 				F227803D2188CD8C0049CF62 /* HotKeysCell.xib in Resources */,
+				F2B6460E21A9AD8700D59F4B /* ModifyPwdCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +786,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B6460421A99CE400D59F4B /* PhoneSignUpCell.swift in Sources */,
 				F2978B9A219076BF0052693F /* GWLPhotoGroupDetailController.m in Sources */,
 				F2978B89219076BF0052693F /* UIViewController+Extension.swift in Sources */,
 				F2978BA4219076BF0052693F /* SWAlertViewController.swift in Sources */,
@@ -718,6 +803,7 @@
 				F2C57F8021A8F0ED009FF207 /* EmailViewController.swift in Sources */,
 				F2978BB521907CA80052693F /* NSDate+DateToString.swift in Sources */,
 				F2978B87219076BF0052693F /* SWProtocols.swift in Sources */,
+				F2B645F921A99C1B00D59F4B /* SignUpView.swift in Sources */,
 				F2978B83219076BF0052693F /* UIImage+Extension.swift in Sources */,
 				F2978BA3219076BF0052693F /* SWGlobalTypealias.swift in Sources */,
 				F2978BB721907CA80052693F /* UILabel+Layer.swift in Sources */,
@@ -742,23 +828,29 @@
 				F2978BA6219076BF0052693F /* SWPhotosManager.swift in Sources */,
 				F2277FFF2188AF4E0049CF62 /* SketchCollage.xcdatamodeld in Sources */,
 				F2978B8C219076BF0052693F /* SWDeviceModelManager.swift in Sources */,
+				F2B645F721A99B7400D59F4B /* UnParseJsonModel.swift in Sources */,
 				F2978B95219076BF0052693F /* SWUploadImageModel.swift in Sources */,
 				F2978B84219076BF0052693F /* SWWebUrl.swift in Sources */,
 				F2978B82219076BF0052693F /* EvaluateStarView.swift in Sources */,
+				F2B6460821A9ABA700D59F4B /* UserProtocals.swift in Sources */,
 				F2978BB421907CA80052693F /* String+filtrationString.swift in Sources */,
 				F2978BB121907CA80052693F /* UIButton+ClosureButton.swift in Sources */,
 				F2978B9E219076BF0052693F /* SWCommentTitleCell.swift in Sources */,
 				F2978B7E219076BF0052693F /* SWGridView.swift in Sources */,
 				F2978B8D219076BF0052693F /* SWGlobalConfig.swift in Sources */,
+				F2B6460021A99CC800D59F4B /* PhoneSignInCell.swift in Sources */,
 				F2978B7C219076BF0052693F /* SWGlobalStruct.swift in Sources */,
 				F2978B9D219076BF0052693F /* SWTextViewCell.swift in Sources */,
 				F2978BA0219076BF0052693F /* SWCommentView.swift in Sources */,
 				F2978BB221907CA80052693F /* UIColor+cmColor.swift in Sources */,
 				F2C57F9021A8F6F6009FF207 /* SWBaseViewController.swift in Sources */,
 				F22780332188C2BC0049CF62 /* HotKeysViewController.swift in Sources */,
+				F2B6460D21A9AD8700D59F4B /* ModifyPwdCell.swift in Sources */,
+				F2C57F9A21A99A1B009FF207 /* SignUpViewController.swift in Sources */,
 				F22780282188B0E30049CF62 /* HomeViewController.swift in Sources */,
 				F2978B45218F28920052693F /* APIManager.swift in Sources */,
 				F227803C2188CD8C0049CF62 /* HotKeysCell.swift in Sources */,
+				F2B6460A21A9AC0800D59F4B /* UserEnums.swift in Sources */,
 				F2978B8A219076BF0052693F /* SWString.swift in Sources */,
 				F2978B8B219076BF0052693F /* SWTipButton.swift in Sources */,
 			);

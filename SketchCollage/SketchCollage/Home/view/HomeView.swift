@@ -53,7 +53,7 @@ class HomeView: UIView {
 
 extension HomeView: UITableViewDataSource,UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -65,8 +65,18 @@ extension HomeView: UITableViewDataSource,UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = HotKeysViewController()
-        self.viewController.navigationController?.pushViewController(vc, animated: true)
+        
+        switch indexPath.section {
+        case 0:
+            let vc = HotKeysViewController()
+            self.viewController.navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = SignUpViewController()
+            let nav = UINavigationController.init(rootViewController: vc)
+            self.viewController.present(nav, animated: true, completion: nil)
+        default:
+            break
+        }
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.01
