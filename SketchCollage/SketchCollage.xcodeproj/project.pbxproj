@@ -92,6 +92,7 @@
 		F2B6461021AAC94E00D59F4B /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6460F21AAC94E00D59F4B /* UserInfoModel.swift */; };
 		F2B6461221AAC9C300D59F4B /* FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6461121AAC9C300D59F4B /* FilePath.swift */; };
 		F2B6461421AADB2F00D59F4B /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6461321AADB2F00D59F4B /* SignUpPresenter.swift */; };
+		F2B6461621AC5DEB00D59F4B /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6461521AC5DEB00D59F4B /* SignInPresenter.swift */; };
 		F2C57F8021A8F0ED009FF207 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C57F7E21A8F0DD009FF207 /* EmailViewController.swift */; };
 		F2C57F8121A8F0ED009FF207 /* EmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C57F7F21A8F0DD009FF207 /* EmailViewController.xib */; };
 		F2C57F9021A8F6F6009FF207 /* SWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C57F8A21A8F6F6009FF207 /* SWBaseViewController.swift */; };
@@ -218,6 +219,7 @@
 		F2B6460F21AAC94E00D59F4B /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
 		F2B6461121AAC9C300D59F4B /* FilePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePath.swift; sourceTree = "<group>"; };
 		F2B6461321AADB2F00D59F4B /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		F2B6461521AC5DEB00D59F4B /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
 		F2C57F7E21A8F0DD009FF207 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		F2C57F7F21A8F0DD009FF207 /* EmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailViewController.xib; sourceTree = "<group>"; };
 		F2C57F8A21A8F6F6009FF207 /* SWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWBaseViewController.swift; sourceTree = "<group>"; };
@@ -502,6 +504,7 @@
 			isa = PBXGroup;
 			children = (
 				F2B6461321AADB2F00D59F4B /* SignUpPresenter.swift */,
+				F2B6461521AC5DEB00D59F4B /* SignInPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -841,6 +844,7 @@
 				F2277FFF2188AF4E0049CF62 /* SketchCollage.xcdatamodeld in Sources */,
 				F2978B8C219076BF0052693F /* SWDeviceModelManager.swift in Sources */,
 				F2B645F721A99B7400D59F4B /* UnParseJsonModel.swift in Sources */,
+				F2B6461621AC5DEB00D59F4B /* SignInPresenter.swift in Sources */,
 				F2978B95219076BF0052693F /* SWUploadImageModel.swift in Sources */,
 				F2978B84219076BF0052693F /* SWWebUrl.swift in Sources */,
 				F2978B82219076BF0052693F /* EvaluateStarView.swift in Sources */,
@@ -1035,7 +1039,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
 				INFOPLIST_FILE = SketchCollage/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1056,7 +1060,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
 				INFOPLIST_FILE = SketchCollage/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

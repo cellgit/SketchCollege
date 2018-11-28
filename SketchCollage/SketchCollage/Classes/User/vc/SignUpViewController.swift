@@ -16,14 +16,27 @@ class SignUpViewController: UIViewController {
     
     var signUpPresenter: SignUpPresenter!
     
+    var signInPresenter: SignInPresenter!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addNoti()
         setupNavBar()
         setTitleDisplay(self.authStepCmd)
         
         setupUI()
+    }
+    
+    func addNoti() {
+        NotificationCenter.default.addObserver(self, selector: #selector(SignUpViewController.signInNotification(_:)), name: NSNotification.Name(rawValue: "LoginSuccessNotification"), object: nil)
+    }
+    @objc func signInNotification(_ notification: Notification){
+        self.navigationController?.popToRootViewController(animated: true)
+        self.dismiss(animated: true) {
+            NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "LoginSuccessNotification"), object: nil)
+        }
     }
     
     func setupNavBar() {
@@ -68,6 +81,7 @@ class SignUpViewController: UIViewController {
         self.view.addSubview(containerView)
         containerView.viewController = self
         self.signUpPresenter = SignUpPresenter.init(UnParseJsonModel(), containerView)
+        self.signInPresenter = SignInPresenter.init(UserInfoModel(), containerView)
     }
     
 
@@ -100,17 +114,17 @@ extension SignUpViewController {
     
     /// 使用密码登录
     func reqSignIn(params: SWSignInStruct) {
-        let pathStr = APIManager.baseUrl + "users/register"
+        let pathStr = APIManager.baseUrl + "users/login"
         let dict = ["account": params.account,
                     "password": params.password]
         let params = SWNetworkParamsStruct.init(url: pathStr, dict: dict)
         print("params===== \(params)")
-        self.signUpPresenter.gotoRequestData(params: params)
+        self.signInPresenter.gotoRequestData(params: params)
     }
     
     /// 使用token登录(注册之后会直接返回token)
     func reqSignIn(token: SWSignInStruct) {
-        let pathStr = APIManager.baseUrl + "users/register"
+        let pathStr = APIManager.baseUrl + "users/login"
         let dict = ["token": token]
         let params = SWNetworkParamsStruct.init(url: pathStr, dict: dict)
         print("params===== \(params)")

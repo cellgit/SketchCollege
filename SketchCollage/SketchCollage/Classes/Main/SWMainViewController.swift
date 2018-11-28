@@ -23,7 +23,7 @@ class SWMainViewController: UITabBarController {
     
 
     func addChildViewControllers() {
-        let first = SWMainVCStruct.init(title: "Login", imgName: "emotarBear", vc: SignUpViewController())
+        let first = SWMainVCStruct.init(title: "Login", imgName: "emotarBear", vc: HotKeysViewController())
         let second = SWMainVCStruct.init(title: "Xcode", imgName: "leaf", vc: HotKeysViewController())
         let third = SWMainVCStruct.init(title: "Vapor", imgName: "rabbit", vc: HomeViewController())
         let fourth = SWMainVCStruct.init(title: "Sketch", imgName: "emotarBear", vc: EmailViewController())

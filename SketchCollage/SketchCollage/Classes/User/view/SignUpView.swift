@@ -240,6 +240,18 @@ extension SignUpView : SWAuthSignUpDelegate {
 extension SignUpView : SWAuthSignInDelegate {
     func sw_auth_sign_in_action(_ sender: UIButton, _ params: SWSignInStruct) {
         print("登录")
+        
+        if params.account == "" {
+            print("请输入账号")
+            return
+        }
+        else if params.password == "" {
+            print("请输入密码")
+            return
+        }
+        else {
+            self.viewController.reqSignIn(params: params)
+        }
     }
 }
 

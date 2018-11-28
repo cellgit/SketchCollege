@@ -73,7 +73,8 @@ extension HomeView: UITableViewDataSource,UITableViewDelegate {
         case 1:
             let vc = SignUpViewController()
             let nav = UINavigationController.init(rootViewController: vc)
-            self.viewController.present(nav, animated: true, completion: nil)
+//            self.viewController.present(nav, animated: true, completion: nil)
+            self.viewController.navigationController?.tabBarController?.present(nav, animated: true, completion: nil)
         default:
             break
         }

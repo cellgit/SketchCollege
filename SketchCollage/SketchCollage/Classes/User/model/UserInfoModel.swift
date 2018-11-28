@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import SwiftyJSON
+import PKHUD
+import Alamofire
 
 class UserInfoModel: NSObject,NSCoding  {
     
@@ -56,5 +59,38 @@ class UserInfoModel: NSObject,NSCoding  {
     
     override init() {
         
+    }
+}
+
+extension UserInfoModel: SWModelProtocal{
+    func requestData(params: SWNetworkParamsStruct, isEncrypting: Bool, success: @escaping SWSucceedTypealias, sendError: @escaping SWErrorTypealias) {
+        Theme().WebRequest(pathStr: params.url, parameters: params.dict, isEncrypting: isEncrypting, success: { (responseObject) in
+            
+            let json = JSON(responseObject!)
+            print("UserInfoModelJson: ==== \(json)")
+            let model = UserInfoModel()
+            if json["status"].intValue == 0 {
+                let user = json["data"].dictionaryValue
+                model.token = user["accessToken"]?.stringValue ?? ""
+                
+                //给全局的UserInfo重新赋值
+                UserInfo = model
+                //保存用户信息
+                NSKeyedArchiver.archiveRootObject(model, toFile: FilePath.filePath(.documentDirectory, senderPath: "/loginUserInfo.archiver"))
+                //更新个人中心的用户信息
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "userChange"), object: nil)
+                //登录成功，返回个人中心页面
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LoginSuccessNotification"), object: nil)
+                //重新设置tab
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "setMain"), object: nil, userInfo: nil)
+                HUD.flash(.label("登录成功！"), delay: 1.0)
+                
+            }else{
+                HUD.flash(.label(json["msg"].stringValue), delay: 1.0)
+            }
+            
+        }) { (error) in
+            print("\(error)")
+        }
     }
 }

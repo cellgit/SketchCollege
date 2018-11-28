@@ -12,7 +12,6 @@ class HotKeysViewController: UIViewController {
     
     var containerView: HotKeysView!
     var presenter: HotKeysPresenter!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +30,20 @@ class HotKeysViewController: UIViewController {
         } else {
             // Fallback on earlier versions
         }
+        
+        let item:UIBarButtonItem = UIBarButtonItem.init(title: "注册/登录", style: .plain, target: self, action: #selector(evt_cancel_Action))
+        self.navigationItem.setLeftBarButton(item, animated: true)
+        //        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.white
     }
+    
+    @objc func evt_cancel_Action() {
+        // dissmiss viewController
+        let vc = SignUpViewController()
+        let nav = UINavigationController.init(rootViewController: vc)
+        self.present(nav, animated: true, completion: nil)
+        //        self.navigationController?.tabBarController?.present(nav, animated: true, completion: nil)
+    }
+    
     func setupUI() {
         self.containerView = HotKeysView.init(frame: UIScreen.main.bounds)
         self.view.addSubview(self.containerView)
